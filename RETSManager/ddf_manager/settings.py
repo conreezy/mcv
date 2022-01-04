@@ -1,12 +1,12 @@
 # Test
-login_url = 'http://sample.data.crea.ca/Login.svc/Login'
-username = 'CXLHfDVrziCfvwgCuL8nUahC'
-password = 'mFqMsCSPdnb5WO1gpEEtDCHH'
+# login_url = 'http://sample.data.crea.ca/Login.svc/Login'
+# username = 'CXLHfDVrziCfvwgCuL8nUahC'
+# password = 'mFqMsCSPdnb5WO1gpEEtDCHH'
 
 # Kathy Credentials
-# login_url = 'http://data.crea.ca/Login.svc/Login'
-# username: 'XCU4q6PZQPRX18igWenqSEhX'
-# password: 'o0AGdTAbOitou6mDjfsgKYM6'
+login_url = 'http://data.crea.ca/Login.svc/Login'
+username = 'XCU4q6PZQPRX18igWenqSEhX'
+password = 'o0AGdTAbOitou6mDjfsgKYM6'
 
 s3_reader = False #Enable S3, if Disabled Local file System will be used.
 

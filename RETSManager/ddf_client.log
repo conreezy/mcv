@@ -449,3 +449,149 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 01-03 19:32:08.513 manager.py     :279  update_db                      INFO     DB updated successfully
 01-03 19:32:08.816 ddf_streamer.py:51   logout                         INFO     Logout Successful
 01-03 19:32:08.816 manager.py     :310  update_server                  INFO     Server updated successfully
+01-04 14:53:14.643 log.py         :222  log_response                   WARNING  Not Found: /favicon.ico
+01-04 14:54:11.674 log.py         :222  log_response                   WARNING  Not Found: /listings
+01-04 14:59:21.690 log.py         :222  log_response                   WARNING  Not Found: /neighbourhoods
+01-04 15:02:30.171 ddf_streamer.py:32   login                          INFO     ===========================================================================
+01-04 15:02:30.475 ddf_streamer.py:35   login                          INFO     Login Successful
+01-04 15:02:30.584 ddf_client.py  :272  update_listings                INFO     Update Listings Started
+01-04 15:02:30.999 ddf_streamer.py:112  retrieve_active_records        ERROR    RETS Server Failure, Returned Code: 20701, Message: Not Logged In
+01-04 15:02:30.999 ddf_client.py  :152  download_active_listings       ERROR    Failed to retrieve active records
+01-04 15:02:30.999 ddf_client.py  :279  update_listings                ERROR    Failed to Download Active Listings
+01-04 15:02:30.999 ddf_client.py  :280  update_listings                ERROR    Update was terminated
+01-04 15:02:30.999 manager.py     :282  update_db                      ERROR    Failed to update DDF
+01-04 15:02:31.000 manager.py     :283  update_db                      ERROR    Error in database update changes have been ignored
+01-04 15:02:31.000 manager.py     :306  update_server                  INFO     Update Failed
+01-04 15:02:31.058 ddf_streamer.py:51   logout                         INFO     Logout Successful
+01-04 15:02:59.347 ddf_streamer.py:32   login                          INFO     ===========================================================================
+01-04 15:02:59.471 ddf_streamer.py:35   login                          INFO     Login Successful
+01-04 15:02:59.543 ddf_client.py  :272  update_listings                INFO     Update Listings Started
+01-04 15:02:59.895 ddf_client.py  :160  download_active_listings       INFO     10 active listings found since 2022-01-01T03:31:59Z
+01-04 15:02:59.895 ddf_client.py  :183  download_active_listings       INFO     10 new active listing successfully downloaded
+01-04 15:02:59.896 ddf_client.py  :285  update_listings                WARNING  Download by ID is skipped as limit is reached through active listing search
+01-04 15:02:59.896 ddf_client.py  :452  update                         INFO     Listing Update Completed
+01-04 15:03:01.059 ddf_media.py   :319  download_photos                INFO     All New 10 Listing Photos were Downloaded Successfully
+01-04 15:03:01.059 ddf_client.py  :462  update                         INFO     Data Update was successful
+01-04 15:03:02.365 db_write.py    :177  update_records                 INFO     New Listings       : 2
+01-04 15:03:02.366 db_write.py    :178  update_records                 INFO     Updated Listings   : 0
+01-04 15:03:02.366 db_write.py    :179  update_records                 INFO     No Change Listings : 8
+01-04 15:03:02.366 db_write.py    :180  update_records                 INFO     No Address Listings: 0
+01-04 15:03:02.367 manager.py     :56   delete_records                 INFO     Deleted 0 old record from DB
+01-04 15:03:02.369 manager.py     :279  update_db                      INFO     DB updated successfully
+01-04 15:03:02.532 ddf_streamer.py:51   logout                         INFO     Logout Successful
+01-04 15:03:02.532 manager.py     :310  update_server                  INFO     Server updated successfully
+01-04 15:03:17.268 ddf_streamer.py:32   login                          INFO     ===========================================================================
+01-04 15:03:17.375 ddf_streamer.py:35   login                          INFO     Login Successful
+01-04 15:03:17.411 ddf_client.py  :272  update_listings                INFO     Update Listings Started
+01-04 15:03:17.665 ddf_client.py  :160  download_active_listings       INFO     10 active listings found since 2022-01-01T23:02:59Z
+01-04 15:03:17.666 ddf_client.py  :183  download_active_listings       INFO     10 new active listing successfully downloaded
+01-04 15:03:17.666 ddf_client.py  :285  update_listings                WARNING  Download by ID is skipped as limit is reached through active listing search
+01-04 15:03:17.666 ddf_client.py  :452  update                         INFO     Listing Update Completed
+01-04 15:03:19.275 ddf_media.py   :319  download_photos                INFO     All New 10 Listing Photos were Downloaded Successfully
+01-04 15:03:19.277 ddf_client.py  :462  update                         INFO     Data Update was successful
+01-04 15:03:26.045 db_write.py    :177  update_records                 INFO     New Listings       : 10
+01-04 15:03:26.046 db_write.py    :178  update_records                 INFO     Updated Listings   : 0
+01-04 15:03:26.046 db_write.py    :179  update_records                 INFO     No Change Listings : 0
+01-04 15:03:26.046 db_write.py    :180  update_records                 INFO     No Address Listings: 0
+01-04 15:03:26.046 manager.py     :56   delete_records                 INFO     Deleted 0 old record from DB
+01-04 15:03:26.047 manager.py     :279  update_db                      INFO     DB updated successfully
+01-04 15:03:26.249 ddf_streamer.py:51   logout                         INFO     Logout Successful
+01-04 15:03:26.249 manager.py     :310  update_server                  INFO     Server updated successfully
+01-04 15:04:12.500 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\web_app\views.py changed, reloading.
+01-04 15:04:39.210 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\settings.py changed, reloading.
+01-04 15:04:40.794 ddf_client.py  :35   __init__                       ERROR    name 'username' is not defined
+01-04 15:04:42.468 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\settings.py changed, reloading.
+01-04 15:04:44.311 ddf_client.py  :35   __init__                       ERROR    name 'username' is not defined
+01-04 15:04:53.322 manager.py     :313  update_server                  ERROR    'DDFClient' object has no attribute 'streamer'
+01-04 15:04:53.322 manager.py     :314  update_server                  ERROR    Error in update_server
+01-04 15:05:19.782 manager.py     :313  update_server                  ERROR    'DDFClient' object has no attribute 'streamer'
+01-04 15:05:19.782 manager.py     :314  update_server                  ERROR    Error in update_server
+01-04 15:12:31.734 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\settings.py changed, reloading.
+01-04 15:12:50.867 ddf_streamer.py:32   login                          INFO     ===========================================================================
+01-04 15:12:51.171 ddf_streamer.py:35   login                          INFO     Login Successful
+01-04 15:12:51.238 ddf_client.py  :272  update_listings                INFO     Update Listings Started
+01-04 15:12:51.663 ddf_client.py  :160  download_active_listings       INFO     10 active listings found since 2022-01-01T23:03:17Z
+01-04 15:12:51.663 ddf_client.py  :183  download_active_listings       INFO     10 new active listing successfully downloaded
+01-04 15:12:51.663 ddf_client.py  :285  update_listings                WARNING  Download by ID is skipped as limit is reached through active listing search
+01-04 15:12:51.663 ddf_client.py  :452  update                         INFO     Listing Update Completed
+01-04 15:12:53.089 ddf_streamer.py:32   login                          INFO     ===========================================================================
+01-04 15:12:53.274 ddf_media.py   :319  download_photos                INFO     All New 10 Listing Photos were Downloaded Successfully
+01-04 15:12:53.274 ddf_client.py  :462  update                         INFO     Data Update was successful
+01-04 15:12:53.349 ddf_streamer.py:41   login                          ERROR    Additional login not permitted
+01-04 15:12:53.420 ddf_client.py  :272  update_listings                INFO     Update Listings Started
+01-04 15:12:53.704 ddf_client.py  :160  download_active_listings       INFO     10 active listings found since 2022-01-01T23:03:17Z
+01-04 15:12:53.704 ddf_client.py  :183  download_active_listings       INFO     10 new active listing successfully downloaded
+01-04 15:12:53.704 ddf_client.py  :285  update_listings                WARNING  Download by ID is skipped as limit is reached through active listing search
+01-04 15:12:53.705 ddf_client.py  :452  update                         INFO     Listing Update Completed
+01-04 15:12:55.396 ddf_media.py   :319  download_photos                INFO     All New 10 Listing Photos were Downloaded Successfully
+01-04 15:12:55.396 ddf_client.py  :462  update                         INFO     Data Update was successful
+01-04 15:12:55.407 db_write.py    :173  update_records                 INFO     database is locked
+01-04 15:12:55.408 db_write.py    :174  update_records                 INFO     Error in updating record for listing: 23914177
+01-04 15:12:55.409 db_write.py    :173  update_records                 INFO     An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+01-04 15:12:55.410 db_write.py    :174  update_records                 INFO     Error in updating record for listing: 23840082
+01-04 15:12:55.411 db_write.py    :173  update_records                 INFO     An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+01-04 15:12:55.412 db_write.py    :174  update_records                 INFO     Error in updating record for listing: 23793181
+01-04 15:12:55.413 db_write.py    :173  update_records                 INFO     An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+01-04 15:12:55.414 db_write.py    :174  update_records                 INFO     Error in updating record for listing: 23910807
+01-04 15:12:55.415 db_write.py    :173  update_records                 INFO     An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+01-04 15:12:55.416 db_write.py    :174  update_records                 INFO     Error in updating record for listing: 23912320
+01-04 15:12:55.417 db_write.py    :173  update_records                 INFO     An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+01-04 15:12:55.417 db_write.py    :174  update_records                 INFO     Error in updating record for listing: 23913226
+01-04 15:12:55.419 db_write.py    :173  update_records                 INFO     An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+01-04 15:12:55.420 db_write.py    :174  update_records                 INFO     Error in updating record for listing: 23913227
+01-04 15:12:55.421 db_write.py    :173  update_records                 INFO     An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+01-04 15:12:55.422 db_write.py    :174  update_records                 INFO     Error in updating record for listing: 23913229
+01-04 15:12:55.422 db_write.py    :177  update_records                 INFO     New Listings       : 8
+01-04 15:12:55.422 db_write.py    :178  update_records                 INFO     Updated Listings   : 0
+01-04 15:12:55.423 db_write.py    :179  update_records                 INFO     No Change Listings : 2
+01-04 15:12:55.423 db_write.py    :180  update_records                 INFO     No Address Listings: 0
+01-04 15:12:55.425 manager.py     :56   delete_records                 INFO     Deleted 0 old record from DB
+01-04 15:12:55.425 manager.py     :38   write_last_update              ERROR    An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+01-04 15:12:55.425 manager.py     :39   write_last_update              ERROR    Error updating last update value in DB
+01-04 15:12:55.426 manager.py     :282  update_db                      ERROR    Failed to update LastUpdate time stamp in db
+01-04 15:12:55.426 manager.py     :283  update_db                      ERROR    Error in database update changes have been ignored
+01-04 15:12:55.426 manager.py     :306  update_server                  INFO     Update Failed
+01-04 15:12:55.493 ddf_streamer.py:51   logout                         INFO     Logout Successful
+01-04 15:12:57.373 db_write.py    :177  update_records                 INFO     New Listings       : 8
+01-04 15:12:57.373 db_write.py    :178  update_records                 INFO     Updated Listings   : 0
+01-04 15:12:57.373 db_write.py    :179  update_records                 INFO     No Change Listings : 2
+01-04 15:12:57.373 db_write.py    :180  update_records                 INFO     No Address Listings: 0
+01-04 15:12:57.375 manager.py     :56   delete_records                 INFO     Deleted 0 old record from DB
+01-04 15:12:57.377 manager.py     :279  update_db                      INFO     DB updated successfully
+01-04 15:12:57.535 ddf_streamer.py:51   logout                         INFO     Logout Successful
+01-04 15:12:57.535 manager.py     :310  update_server                  INFO     Server updated successfully
+01-04 15:13:09.708 ddf_streamer.py:32   login                          INFO     ===========================================================================
+01-04 15:13:09.818 ddf_streamer.py:35   login                          INFO     Login Successful
+01-04 15:13:09.874 ddf_client.py  :272  update_listings                INFO     Update Listings Started
+01-04 15:13:10.188 ddf_client.py  :160  download_active_listings       INFO     10 active listings found since 2022-01-01T23:12:51Z
+01-04 15:13:10.189 ddf_client.py  :183  download_active_listings       INFO     10 new active listing successfully downloaded
+01-04 15:13:10.189 ddf_client.py  :285  update_listings                WARNING  Download by ID is skipped as limit is reached through active listing search
+01-04 15:13:10.189 ddf_client.py  :452  update                         INFO     Listing Update Completed
+01-04 15:13:11.078 ddf_media.py   :319  download_photos                INFO     All New 10 Listing Photos were Downloaded Successfully
+01-04 15:13:11.079 ddf_client.py  :462  update                         INFO     Data Update was successful
+01-04 15:13:11.099 db_write.py    :177  update_records                 INFO     New Listings       : 0
+01-04 15:13:11.100 db_write.py    :178  update_records                 INFO     Updated Listings   : 0
+01-04 15:13:11.100 db_write.py    :179  update_records                 INFO     No Change Listings : 10
+01-04 15:13:11.100 db_write.py    :180  update_records                 INFO     No Address Listings: 0
+01-04 15:13:11.103 manager.py     :56   delete_records                 INFO     Deleted 0 old record from DB
+01-04 15:13:11.107 manager.py     :279  update_db                      INFO     DB updated successfully
+01-04 15:13:11.310 ddf_streamer.py:51   logout                         INFO     Logout Successful
+01-04 15:13:11.310 manager.py     :310  update_server                  INFO     Server updated successfully
+01-04 15:13:55.629 ddf_streamer.py:32   login                          INFO     ===========================================================================
+01-04 15:13:55.764 ddf_streamer.py:35   login                          INFO     Login Successful
+01-04 15:13:55.847 ddf_client.py  :272  update_listings                INFO     Update Listings Started
+01-04 15:13:56.136 ddf_client.py  :160  download_active_listings       INFO     10 active listings found since 2022-01-01T23:13:09Z
+01-04 15:13:56.136 ddf_client.py  :183  download_active_listings       INFO     10 new active listing successfully downloaded
+01-04 15:13:56.137 ddf_client.py  :285  update_listings                WARNING  Download by ID is skipped as limit is reached through active listing search
+01-04 15:13:56.137 ddf_client.py  :452  update                         INFO     Listing Update Completed
+01-04 15:13:57.242 ddf_media.py   :319  download_photos                INFO     All New 10 Listing Photos were Downloaded Successfully
+01-04 15:13:57.243 ddf_client.py  :462  update                         INFO     Data Update was successful
+01-04 15:13:57.263 db_write.py    :177  update_records                 INFO     New Listings       : 0
+01-04 15:13:57.263 db_write.py    :178  update_records                 INFO     Updated Listings   : 0
+01-04 15:13:57.263 db_write.py    :179  update_records                 INFO     No Change Listings : 10
+01-04 15:13:57.263 db_write.py    :180  update_records                 INFO     No Address Listings: 0
+01-04 15:13:57.264 manager.py     :56   delete_records                 INFO     Deleted 0 old record from DB
+01-04 15:13:57.266 manager.py     :279  update_db                      INFO     DB updated successfully
+01-04 15:13:57.414 ddf_streamer.py:51   logout                         INFO     Logout Successful
+01-04 15:13:57.414 manager.py     :310  update_server                  INFO     Server updated successfully
+01-04 15:28:16.278 log.py         :222  log_response                   WARNING  Not Found: /listings

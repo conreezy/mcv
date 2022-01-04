@@ -43,7 +43,7 @@ def home_page(request):
     # response = session.get(url)
     # ddf_info = json.loads(response.text)
 
-    listings = Address.objects.all()[:6]
+    listings = Address.objects.all()[:8]
     context = {"title": title,'listings': listings}
     return render(request, "index.html", context)
 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RETS ReplyCode="0" ReplyText="Operation Successful">
+  <COUNT Records="21" />
+  <DELIMITER value="09" />
+  <COLUMNS>	ResourceRecordID	Order	MediaUrl	MediaModificationTimestamp	</COLUMNS>
+  <DATA>	23890692	1	https://ddfcdn.realtor.ca/listings/TS637766772540000000/reb9/highres/8/A1166738_1.jpg	2022-01-01T23:40:54Z	</DATA>
+  <DATA>	23890692	2	https://ddfcdn.realtor.ca/listings/TS637766772520000000/reb9/highres/8/A1166738_2.jpg	2022-01-01T23:40:52Z	</DATA>
+  <DATA>	23890692	3	https://ddfcdn.realtor.ca/listings/TS637766772540000000/reb9/highres/8/A1166738_3.jpg	2022-01-01T23:40:54Z	</DATA>
+  <DATA>	23890692	4	https://ddfcdn.realtor.ca/listings/TS637766772530000000/reb9/highres/8/A1166738_4.jpg	2022-01-01T23:40:53Z	</DATA>
+  <DATA>	23890692	5	https://ddfcdn.realtor.ca/listings/TS637766772530000000/reb9/highres/8/A1166738_5.jpg	2022-01-01T23:40:53Z	</DATA>
+  <DATA>	23890692	6	https://ddfcdn.realtor.ca/listings/TS637766772510000000/reb9/highres/8/A1166738_6.jpg	2022-01-01T23:40:51Z	</DATA>
+  <DATA>	23890692	7	https://ddfcdn.realtor.ca/listings/TS637766772510000000/reb9/highres/8/A1166738_7.jpg	2022-01-01T23:40:51Z	</DATA>
+  <DATA>	23890692	8	https://ddfcdn.realtor.ca/listings/TS637766772510000000/reb9/highres/8/A1166738_8.jpg	2022-01-01T23:40:51Z	</DATA>
+  <DATA>	23890692	9	https://ddfcdn.realtor.ca/listings/TS637766772510000000/reb9/highres/8/A1166738_9.jpg	2022-01-01T23:40:51Z	</DATA>
+  <DATA>	23890692	10	https://ddfcdn.realtor.ca/listings/TS637766772510000000/reb9/highres/8/A1166738_10.jpg	2022-01-01T23:40:51Z	</DATA>
+  <DATA>	23890692	11	https://ddfcdn.realtor.ca/listings/TS637766772520000000/reb9/highres/8/A1166738_11.jpg	2022-01-01T23:40:52Z	</DATA>
+  <DATA>	23890692	12	https://ddfcdn.realtor.ca/listings/TS637766772510000000/reb9/highres/8/A1166738_12.jpg	2022-01-01T23:40:51Z	</DATA>
+  <DATA>	23890692	13	https://ddfcdn.realtor.ca/listings/TS637766772510000000/reb9/highres/8/A1166738_13.jpg	2022-01-01T23:40:51Z	</DATA>
+  <DATA>	23890692	14	https://ddfcdn.realtor.ca/listings/TS637766772510000000/reb9/highres/8/A1166738_14.jpg	2022-01-01T23:40:51Z	</DATA>
+  <DATA>	23890692	15	https://ddfcdn.realtor.ca/listings/TS637766772510000000/reb9/highres/8/A1166738_15.jpg	2022-01-01T23:40:51Z	</DATA>
+  <DATA>	23890692	16	https://ddfcdn.realtor.ca/listings/TS637766772530000000/reb9/highres/8/A1166738_16.jpg	2022-01-01T23:40:53Z	</DATA>
+  <DATA>	23890692	17	https://ddfcdn.realtor.ca/listings/TS637766772520000000/reb9/highres/8/A1166738_17.jpg	2022-01-01T23:40:52Z	</DATA>
+  <DATA>	23890692	18	https://ddfcdn.realtor.ca/listings/TS637766772550000000/reb9/highres/8/A1166738_18.jpg	2022-01-01T23:40:55Z	</DATA>
+  <DATA>	23890692	19	https://ddfcdn.realtor.ca/listings/TS637766772530000000/reb9/highres/8/A1166738_19.jpg	2022-01-01T23:40:53Z	</DATA>
+  <DATA>	23890692	20	https://ddfcdn.realtor.ca/listings/TS637766772540000000/reb9/highres/8/A1166738_20.jpg	2022-01-01T23:40:54Z	</DATA>
+  <DATA>	23890692	21	https://ddfcdn.realtor.ca/listings/TS637766772530000000/reb9/highres/8/A1166738_21.jpg	2022-01-01T23:40:53Z	</DATA>
+</RETS>
