@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RETS ReplyCode="0" ReplyText="Operation Successful">
+  <COUNT Records="28" />
+  <DELIMITER value="09" />
+  <COLUMNS>	ResourceRecordID	Order	MediaUrl	MediaModificationTimestamp	</COLUMNS>
+  <DATA>	22690140	1	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_1.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	2	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_2.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	3	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_3.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	4	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_4.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	5	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_5.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	6	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_6.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	7	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_7.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	8	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_8.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	9	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_9.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	10	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_10.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	11	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_11.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	12	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_12.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	13	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_13.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	14	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_14.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	15	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_15.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	16	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_16.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	17	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_17.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	18	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_18.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	19	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_19.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	20	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_20.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	21	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_21.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	22	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_22.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	23	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_23.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	24	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_24.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	25	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_25.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	26	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_26.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	27	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_27.jpg	2021-01-01T22:36:05Z	</DATA>
+  <DATA>	22690140	28	https://ddfcdn.realtor.ca/listings/TS637451373650000000/reb10/highres/7/E4223837_28.jpg	2021-01-01T22:36:05Z	</DATA>
+</RETS>

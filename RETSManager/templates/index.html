@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!--- Iamge Banner -->
+<div class='cointainer-fluid'>
+	<div class='row'>
+
+		<div class='col col-12'>
+			<div class= "img-ban-1">
+				<div class= "ban-box">
+					{% load static %} 
+				   	<img id= "ban-image" class="ban-image" src= "{% static 'image/banner/ban_1.jpg' %}" alt="large stone house with blue sky">
+				   	{% load static %}
+					<img id= "ban-image" class="ban-image" src="{% static 'image/banner/ban_2.jpg' %}" alt="modern home layout">
+				</div>
+				<div class= "ban-box">
+					{% load static %}
+				  	<img id= "ban-image" class="ban-image" src="{% static 'image/banner/ban_3.jpg' %}" alt="modern single family home">
+				</div>
+				<div class= "ban-box">
+				  	{% load static %}
+				  	<img id= "ban-image" class="ban-image" src="{% static 'image/banner/ban_4.jpg' %}" alt="ottawa tulips">
+				  	{% load static %}
+					<img id= "ban-image" class="ban-image" src="{% static 'image/banner/ban_6.jpg' %}" alt="ottawa canal at night">	
+				</div>
+				<div class= "ban-box">
+				  	{% load static %}
+				  	<img id= "ban-image" class="ban-image" src="{% static 'image/banner/ban5.jpg' %}" alt="sunset flats">
+				  	{% load static %}
+					<img id= "ban-image" class="ban-image" src="{% static 'image/banner/ban7.jpg' %}" alt="ottawa tulips">
+				</div>
+			</div>
+		</div>
+
+		<div class='col col-12'>
+			<!--- Sayings Bar -->
+			<div class="carousel-1 slide" data-ride="carousel">
+			  <div class="carousel-items">
+			    <div class="carousel-item active">
+			        <h1 class="d-block" align="center">Jeff & Kathy McVeigh | Ottawa Real Estate Agents</h1>
+			    </div>
+			    <div class="carousel-item">
+			      	<h2 class="d-block" align="center">Trusted In Ottawa Since 1985!</h2>
+			    </div>
+			    <div class="carousel-item">
+			      	<h2 class="d-block" align="center">Selling Homes In Findlay Creek Since 2004!</h2>
+			    </div>
+			  </div>
+			</div>
+		</div>
+
+		<div class='col col-12'>
+			<div class= "top-banner-2 mb-4 mt-4">
+				<h3>OUR LISTINGS</h3>
+			</div>
+			<!--- Listings -->
+			<div class="row">
+				{% for listing in listings %}
+					<div class='col-xl-3 col-lg-4 col-md-6 col-sm-12'>
+						<img id= "ban-image" class="ban-image" src= "{% static 'image/banner/ban_1.jpg' %}" alt="large stone house with blue sky">
+						<p>{{ listing.StreetAddress }}</p>
+						<p>{{ listing.AddressLine1 }}</p>
+						<p>{{ listing.AddressLine2 }}</p>
+						<p>{{ listing.StreetNumber }}</p>
+						<p>{{ listing.StreetName }}</p>
+						<p>{{ listing.City }}</p>
+						<p>{{ listing.Province }}</p>
+						<p>{{ listing.Country }}</p>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+
+	</div>
+</div>
+</body>
+
+{% endblock %}

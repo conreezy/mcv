@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RETS ReplyCode="0" ReplyText="Operation Successful">
+  <COUNT Records="4" />
+  <DELIMITER value="09" />
+  <COLUMNS>	ResourceRecordID	Order	MediaUrl	MediaModificationTimestamp	</COLUMNS>
+  <DATA>	20302485	1	https://ddfcdn.realtor.ca/listings/TS636846310280000000/reb117/highres/9/1190819_1.jpg	2019-02-01T15:17:08Z	</DATA>
+  <DATA>	20302485	2	https://ddfcdn.realtor.ca/listings/TS636846310280000000/reb117/highres/9/1190819_2.jpg	2019-02-01T15:17:08Z	</DATA>
+  <DATA>	20302485	3	https://ddfcdn.realtor.ca/listings/TS636846310280000000/reb117/highres/9/1190819_3.jpg	2019-02-01T15:17:08Z	</DATA>
+  <DATA>	20302485	4	https://ddfcdn.realtor.ca/listings/TS636846310280000000/reb117/highres/9/1190819_4.jpg	2019-02-01T15:17:08Z	</DATA>
+</RETS>

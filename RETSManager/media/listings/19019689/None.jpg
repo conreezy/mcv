@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RETS ReplyCode="0" ReplyText="Operation Successful">
+  <COUNT Records="11" />
+  <DELIMITER value="09" />
+  <COLUMNS>	ResourceRecordID	Order	MediaUrl	MediaModificationTimestamp	</COLUMNS>
+  <DATA>	19019689	1	https://ddfcdn.realtor.ca/listings/TS636530750650000000/reb89/highres/9/c8016779_1.jpg	2018-02-01T09:44:25Z	</DATA>
+  <DATA>	19019689	2	https://ddfcdn.realtor.ca/listings/TS636531617330000000/reb89/highres/9/c8016779_2.jpg	2018-02-02T09:48:53Z	</DATA>
+  <DATA>	19019689	3	https://ddfcdn.realtor.ca/listings/TS636530750650000000/reb89/highres/9/c8016779_3.jpg	2018-02-01T09:44:25Z	</DATA>
+  <DATA>	19019689	4	https://ddfcdn.realtor.ca/listings/TS636530750650000000/reb89/highres/9/c8016779_4.jpg	2018-02-01T09:44:25Z	</DATA>
+  <DATA>	19019689	5	https://ddfcdn.realtor.ca/listings/TS636530750650000000/reb89/highres/9/c8016779_5.jpg	2018-02-01T09:44:25Z	</DATA>
+  <DATA>	19019689	6	https://ddfcdn.realtor.ca/listings/TS636531617330000000/reb89/highres/9/c8016779_6.jpg	2018-02-02T09:48:53Z	</DATA>
+  <DATA>	19019689	7	https://ddfcdn.realtor.ca/listings/TS636530750650000000/reb89/highres/9/c8016779_7.jpg	2018-02-01T09:44:25Z	</DATA>
+  <DATA>	19019689	8	https://ddfcdn.realtor.ca/listings/TS636530750650000000/reb89/highres/9/c8016779_8.jpg	2018-02-01T09:44:25Z	</DATA>
+  <DATA>	19019689	9	https://ddfcdn.realtor.ca/listings/TS636530750650000000/reb89/highres/9/c8016779_9.jpg	2018-02-01T09:44:25Z	</DATA>
+  <DATA>	19019689	10	https://ddfcdn.realtor.ca/listings/TS636530750650000000/reb89/highres/9/c8016779_10.jpg	2018-02-01T09:44:25Z	</DATA>
+  <DATA>	19019689	11	https://ddfcdn.realtor.ca/listings/TS636531617330000000/reb89/highres/9/c8016779_11.jpg	2018-02-02T09:48:53Z	</DATA>
+</RETS>

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% include 'top_banner.html' %}
+{{ title }}
+
+{{ user }}
+
+{{ user.is_authenticated }}
+
+{% for a in my_list %}
+		<li>{{ a }}</li>
+	{% endfor %}
+
+{% endblock %}

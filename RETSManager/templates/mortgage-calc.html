@@ -1,0 +1,311 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% include "top_banner.html" %}
+
+<div class='container'>
+	<div class='row'>
+		<div class='col-12 my-5'>
+			<table class='table table-borderless'>
+				<tr>
+					<td style='font-weight: bold;'>House Price:</td>
+					<td></td>
+					<td><input style='font-weight: bold; font-size: 19px; color:darkgreen;width:150px;' type='number' id='house_price' value='400000'></td>
+					<td><input style='width:150px;' type='button' id='calc_btn' class='btn btn-warning' value='CALCULATE'></td>
+				</tr>
+				<tr>
+					<td style='font-weight: bold;'>Down Payment %:</td>
+					<td></td>
+					<td><input style='width:150px;text-align: center;' type='number' value='5'  id='dp_per_1'></td>
+					<td><input style='width:150px;text-align: center;' type='number' value='10' id='dp_per_2'></td>
+					<td><input style='width:150px;text-align: center;' type='number' value='15' id='dp_per_3'></td>
+					<td><input style='width:150px;text-align: center;' type='number' value='20' id='dp_per_4'></td>
+				</tr>
+				<tr>
+					<td style='font-weight: bold;'>Down Payment $:</td>
+					<td style='font-size: 20px; color:red; font-weight: bold'>-</td>
+					<td id='dp_amt_1'></td>
+					<td id='dp_amt_2'></td>
+					<td id='dp_amt_3'></td>
+					<td id='dp_amt_4'></td>
+				</tr>
+				<tr>
+					<td style='font-weight: bold;'>Mortgage Insurance:</td>
+					<td style='font-size: 20px; color:red; font-weight: bold'>+</td>
+					<td id='m_ins_1'></td>
+					<td id='m_ins_2'></td>
+					<td id='m_ins_3'></td>
+					<td id='m_ins_4'></td>
+				</tr>
+				<tr>
+					<td style='font-weight: bold;'>Mortgage Ammount:</td>
+					<td></td>
+					<td id='m_amt_1'></td>
+					<td id='m_amt_2'></td>
+					<td id='m_amt_3'></td>
+					<td id='m_amt_4'></td>
+				</tr>
+				<tr>
+					<td style='font-weight: bold;'>Amortization:</td>
+					<td></td>
+					<td>
+						<select style='width:150px;' id='amor_1' name="Amortization">
+						  <option value="1">1 year</option>
+						  <option value="5">5 years</option>
+						  <option value="10">10 years</option>
+						  <option value="15">15 years</option>
+						  <option value="20">20 years</option>
+						  <option selected='selected' value="25">25 years</option>
+						  <option value="30">30 years</option>
+						</select>
+					</td>
+					<td>
+						<select style='width:150px;' id='amor_2' name="Amortization">
+						  <option value="1">1 year</option>
+						  <option value="5">5 years</option>
+						  <option value="10">10 years</option>
+						  <option value="15">15 years</option>
+						  <option value="20">20 years</option>
+						  <option selected='selected' value="25">25 years</option>
+						  <option value="30">30 years</option>
+						</select>
+					</td>
+					<td>
+						<select style='width:150px;' id='amor_3' name="Amortization">
+						  <option value="1">1 year</option>
+						  <option value="5">5 years</option>
+						  <option value="10">10 years</option>
+						  <option value="15">15 years</option>
+						  <option value="20">20 years</option>
+						  <option selected='selected' value="25">25 years</option>
+						  <option value="30">30 years</option>
+						</select>
+					</td>
+					<td>
+						<select style='width:150px;' id='amor_4' name="Amortization">
+						  <option value="1">1 year</option>
+						  <option value="5">5 years</option>
+						  <option value="10">10 years</option>
+						  <option value="15">15 years</option>
+						  <option value="20">20 years</option>
+						  <option selected='selected' value="25">25 years</option>
+						  <option value="30">30 years</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td style='font-weight: bold;'>Interest Rate:</td>
+					<td></td>
+					<td><input style='width:150px;text-align: center;' id='rate_1' type='number' value='3'></td>
+					<td><input style='width:150px;text-align: center;' id='rate_2' type='number' value='3'></td>
+					<td><input style='width:150px;text-align: center;' id='rate_3' type='number' value='3'></td>
+					<td><input style='width:150px;text-align: center;' id='rate_4' type='number' value='3'></td>
+				</tr>
+				<tr>
+					<td style='font-weight: bold;'>Payment Frequency:</td>
+					<td></td>
+					<td>
+						<select style='width:150px;' id='freq_1' name="Payment Frequency">
+						  <option value="12">Monthly</option>
+						  <option value="26">Bi-weekly</option>
+						</select>
+					</td>
+					<td>
+						<select style='width:150px;' id='freq_2' name="Payment Frequency">
+						  <option value="12">Monthly</option>
+						  <option value="26">Bi-weekly</option>
+						</select>
+					</td>
+					<td>
+						<select style='width:150px;' id='freq_3' name="Payment Frequency">
+						  <option value="12">Monthly</option>
+						  <option value="26">Bi-weekly</option>
+						</select>
+					</td>
+					<td>
+						<select style='width:150px;' id='freq_4' name="Payment Frequency">
+						  <option value="12">Monthly</option>
+						  <option value="26">Bi-weekly</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td style='font-weight: bold;'>Mortgage Payment:</td>
+					<td style='font-size: 20px; color:red; font-weight: bold'>=</td>
+					<td style='font-weight: bold; font-size: 19px; color:darkgreen;' id='pay_1'></td>
+					<td style='font-weight: bold; font-size: 19px; color:darkgreen;' id='pay_2'></td>
+					<td style='font-weight: bold; font-size: 19px; color:darkgreen;' id='pay_3'></td>
+					<td style='font-weight: bold; font-size: 19px; color:darkgreen;' id='pay_4'></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+<script>
+
+	var input = house_price.value
+
+	function DepositAmount(houseprice, deposit_percent){
+	return deposit_percent / 100 * houseprice;
+	}
+	function MortgageInsurance(cmhc_rate, houseprice){
+	return ((cmhc_rate / 100) * houseprice);
+	}
+	function MortgageAmount(houseprice, deposit, insurance,){
+	return houseprice - deposit + insurance;
+	}
+	function MortgagePayment(mortgage_amount, discount_factor){
+	return mortgage_amount / discount_factor;
+	}
+	function chmcRate(deposit_percent){
+	if (deposit_percent < 5){
+		alert('5% minimum down payment required')
+		return 0
+		}
+	if (deposit_percent < 9.99){
+		return 4
+		}
+	if (deposit_percent < 14.99){
+		return 3.1
+		}
+	if (deposit_percent < 19.99){
+		return 2.8
+		}
+	if (deposit_percent > 19.99){
+		return 0
+		}
+	}
+	function PeriodicRate(interest_rate, payment_frequency){
+	return (interest_rate/100) / payment_frequency;
+	}
+	function NumberOfPayments(amortization, payment_frequency){
+		return amortization * payment_frequency;
+	}
+	function DiscountFactor(periodic_rate, number_of_payments){
+		return (((1+periodic_rate)**number_of_payments)-1) / (periodic_rate*((1+periodic_rate)**number_of_payments));
+	}
+
+	/* Calculate Button */
+	var calc_btn = document.getElementById("calc_btn")
+
+	function changeValues(house_price, dp_per_1, amor_1, rate_1, freq_1){
+
+		/* House Price */
+		var house_price = document.getElementById("house_price").value
+
+		/* Down Payment Percentage */
+		var dp_per_1 = document.getElementById("dp_per_1").value;
+		var dp_per_2 = document.getElementById("dp_per_2").value;
+		var dp_per_3 = document.getElementById("dp_per_3").value;
+		var dp_per_4 = document.getElementById("dp_per_4").value;
+
+		/* Down Payment $ Amount */
+		var dp_amt_1 = DepositAmount(house_price, dp_per_1);
+		var dp_amt_2 = DepositAmount(house_price, dp_per_2);
+		var dp_amt_3 = DepositAmount(house_price, dp_per_3);
+		var dp_amt_4 = DepositAmount(house_price, dp_per_4);
+
+		/* Mortgage Insurance */
+		var cmhc_rate_1 = chmcRate(dp_per_1);
+		var cmhc_rate_2 = chmcRate(dp_per_2);
+		var cmhc_rate_3 = chmcRate(dp_per_3);
+		var cmhc_rate_4 = chmcRate(dp_per_4);
+
+		var cmhc_amt_1 = MortgageInsurance(cmhc_rate_1, house_price);
+		var cmhc_amt_2 = MortgageInsurance(cmhc_rate_2, house_price);
+		var cmhc_amt_3 = MortgageInsurance(cmhc_rate_3, house_price);
+		var cmhc_amt_4 = MortgageInsurance(cmhc_rate_4, house_price);
+
+		/* Mortgage Amount */
+		var mort_amt_1 = MortgageAmount(house_price, dp_amt_1, cmhc_amt_1);
+		var mort_amt_2 = MortgageAmount(house_price, dp_amt_2, cmhc_amt_2);
+		var mort_amt_3 = MortgageAmount(house_price, dp_amt_3, cmhc_amt_3);
+		var mort_amt_4 = MortgageAmount(house_price, dp_amt_4, cmhc_amt_4);
+
+		/* Amortization */
+		var amor_1 = document.getElementById("amor_1").value;
+		var amor_2 = document.getElementById("amor_2").value;
+		var amor_3 = document.getElementById("amor_3").value;
+		var amor_4 = document.getElementById("amor_4").value;
+
+		/* Interest Rate */
+		var rate_1 = document.getElementById("rate_1").value;
+		var rate_2 = document.getElementById("rate_2").value;
+		var rate_3 = document.getElementById("rate_3").value;
+		var rate_4 = document.getElementById("rate_4").value;
+
+		/* Payment Frequency */
+		var freq_1 = document.getElementById("freq_1").value;
+		var freq_2 = document.getElementById("freq_2").value;
+		var freq_3 = document.getElementById("freq_3").value;
+		var freq_4 = document.getElementById("freq_4").value;
+
+		/* Mortgage Payment */
+		// periodic rate
+		var per_rate_1 = PeriodicRate(rate_1, freq_1);
+		var per_rate_2 = PeriodicRate(rate_2, freq_2);
+		var per_rate_3 = PeriodicRate(rate_3, freq_3);
+		var per_rate_4 = PeriodicRate(rate_4, freq_4);
+		// number of payments
+		var num_pay_1 = NumberOfPayments(amor_1, freq_1);
+		var num_pay_2 = NumberOfPayments(amor_2, freq_2);
+		var num_pay_3 = NumberOfPayments(amor_3, freq_3);
+		var num_pay_4 = NumberOfPayments(amor_4, freq_4);
+		// discount factor
+		var disc_fac_1 = DiscountFactor(per_rate_1, num_pay_1);
+		var disc_fac_2 = DiscountFactor(per_rate_2, num_pay_2);
+		var disc_fac_3 = DiscountFactor(per_rate_3, num_pay_3);
+		var disc_fac_4 = DiscountFactor(per_rate_4, num_pay_4);
+		// mortgage payment 
+		var payment_1 = MortgagePayment(mort_amt_1, disc_fac_1);
+		var payment_2 = MortgagePayment(mort_amt_2, disc_fac_2);
+		var payment_3 = MortgagePayment(mort_amt_3, disc_fac_3);
+		var payment_4 = MortgagePayment(mort_amt_4, disc_fac_4);
+
+		// downpayment amount 
+		document.getElementById("dp_amt_1").innerHTML = (new Intl.NumberFormat('en-CA', {style: 'currency', 
+														currency: 'CAD', useGrouping: true }) .format(dp_amt_1));
+		document.getElementById("dp_amt_2").innerHTML = (new Intl.NumberFormat('en-CA', {style: 'currency', 
+														currency: 'CAD', useGrouping: true }) .format(dp_amt_2));
+		document.getElementById("dp_amt_3").innerHTML = (new Intl.NumberFormat('en-CA', {style: 'currency', 
+														currency: 'CAD', useGrouping: true }) .format(dp_amt_3));
+		document.getElementById("dp_amt_4").innerHTML = (new Intl.NumberFormat('en-CA', {style: 'currency', 
+														currency: 'CAD', useGrouping: true }) .format(dp_amt_4));
+		// mortgage insurance amount
+		document.getElementById("m_ins_1").innerHTML = (new Intl.NumberFormat('en-CA', {style: 'currency', 
+														currency: 'CAD', useGrouping: true }) .format(cmhc_amt_1));
+		document.getElementById("m_ins_2").innerHTML = (new Intl.NumberFormat('en-CA', {style: 'currency', 
+														currency: 'CAD', useGrouping: true }) .format(cmhc_amt_2));
+		document.getElementById("m_ins_3").innerHTML = (new Intl.NumberFormat('en-CA', {style: 'currency', 
+														currency: 'CAD', useGrouping: true }) .format(cmhc_amt_3));
+		document.getElementById("m_ins_4").innerHTML = (new Intl.NumberFormat('en-CA', {style: 'currency', 
+														currency: 'CAD', useGrouping: true }) .format(cmhc_amt_4)); 
+		// mortgage amount
+		document.getElementById("m_amt_1").innerHTML = (new Intl.NumberFormat('en-CA', {style: 'currency', 
+														currency: 'CAD', useGrouping: true }) .format(mort_amt_1));
+		document.getElementById("m_amt_2").innerHTML = (new Intl.NumberFormat('en-CA', {style: 'currency', 
+														currency: 'CAD', useGrouping: true }) .format(mort_amt_2));
+		document.getElementById("m_amt_3").innerHTML = (new Intl.NumberFormat('en-CA', {style: 'currency', 
+														currency: 'CAD', useGrouping: true }) .format(mort_amt_3));
+		document.getElementById("m_amt_4").innerHTML = (new Intl.NumberFormat('en-CA', {style: 'currency', 
+														currency: 'CAD', useGrouping: true }) .format(mort_amt_4)); 
+		// mortgage payment
+		document.getElementById("pay_1").innerHTML = (new Intl.NumberFormat('en-CA', {style: 'currency', 
+														currency: 'CAD', useGrouping: true }) .format(payment_1));
+		document.getElementById("pay_2").innerHTML = (new Intl.NumberFormat('en-CA', {style: 'currency', 
+														currency: 'CAD', useGrouping: true }) .format(payment_2));
+		document.getElementById("pay_3").innerHTML = (new Intl.NumberFormat('en-CA', {style: 'currency', 
+														currency: 'CAD', useGrouping: true }) .format(payment_3));
+		document.getElementById("pay_4").innerHTML = (new Intl.NumberFormat('en-CA', {style: 'currency', 
+														currency: 'CAD', useGrouping: true }) .format(payment_4));
+		}
+	
+	changeValues(house_price, dp_per_1, amor_1, rate_1, freq_1);
+
+	calc_btn.addEventListener("click", function() {
+		changeValues(house_price, dp_per_1, amor_1, rate_1, freq_1);
+	});
+</script>
+
+{% endblock %}

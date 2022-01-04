@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RETS ReplyCode="0" ReplyText="Operation Successful">
+  <COUNT Records="10" />
+  <DELIMITER value="09" />
+  <COLUMNS>	ResourceRecordID	Order	MediaUrl	MediaModificationTimestamp	</COLUMNS>
+  <DATA>	23912249	1	https://ddfcdn.realtor.ca/listings/TS637764069570000000/reb10/highres/4/E4272644_1.jpg	2021-12-29T20:35:57Z	</DATA>
+  <DATA>	23912249	2	https://ddfcdn.realtor.ca/listings/TS637764069570000000/reb10/highres/4/E4272644_2.jpg	2021-12-29T20:35:57Z	</DATA>
+  <DATA>	23912249	3	https://ddfcdn.realtor.ca/listings/TS637764069570000000/reb10/highres/4/E4272644_3.jpg	2021-12-29T20:35:57Z	</DATA>
+  <DATA>	23912249	4	https://ddfcdn.realtor.ca/listings/TS637764069570000000/reb10/highres/4/E4272644_4.jpg	2021-12-29T20:35:57Z	</DATA>
+  <DATA>	23912249	5	https://ddfcdn.realtor.ca/listings/TS637764069570000000/reb10/highres/4/E4272644_5.jpg	2021-12-29T20:35:57Z	</DATA>
+  <DATA>	23912249	6	https://ddfcdn.realtor.ca/listings/TS637764069570000000/reb10/highres/4/E4272644_6.jpg	2021-12-29T20:35:57Z	</DATA>
+  <DATA>	23912249	7	https://ddfcdn.realtor.ca/listings/TS637764069570000000/reb10/highres/4/E4272644_7.jpg	2021-12-29T20:35:57Z	</DATA>
+  <DATA>	23912249	8	https://ddfcdn.realtor.ca/listings/TS637764069570000000/reb10/highres/4/E4272644_8.jpg	2021-12-29T20:35:57Z	</DATA>
+  <DATA>	23912249	9	https://ddfcdn.realtor.ca/listings/TS637764069570000000/reb10/highres/4/E4272644_9.jpg	2021-12-29T20:35:57Z	</DATA>
+  <DATA>	23912249	10	https://ddfcdn.realtor.ca/listings/TS637764069570000000/reb10/highres/4/E4272644_10.jpg	2021-12-29T20:35:57Z	</DATA>
+</RETS>

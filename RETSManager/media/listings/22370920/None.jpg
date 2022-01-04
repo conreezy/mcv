@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RETS ReplyCode="0" ReplyText="Operation Successful">
+  <COUNT Records="16" />
+  <DELIMITER value="09" />
+  <COLUMNS>	ResourceRecordID	Order	MediaUrl	MediaModificationTimestamp	</COLUMNS>
+  <DATA>	22370920	1	https://ddfcdn.realtor.ca/listings/TS637451964860000000/reb89/highres/1/R2498781_1.jpg	2021-01-02T15:01:26Z	</DATA>
+  <DATA>	22370920	2	https://ddfcdn.realtor.ca/listings/TS637451964880000000/reb89/highres/1/R2498781_2.jpg	2021-01-02T15:01:28Z	</DATA>
+  <DATA>	22370920	3	https://ddfcdn.realtor.ca/listings/TS637451964870000000/reb89/highres/1/R2498781_3.jpg	2021-01-02T15:01:27Z	</DATA>
+  <DATA>	22370920	4	https://ddfcdn.realtor.ca/listings/TS637451964870000000/reb89/highres/1/R2498781_4.jpg	2021-01-02T15:01:27Z	</DATA>
+  <DATA>	22370920	5	https://ddfcdn.realtor.ca/listings/TS637451964860000000/reb89/highres/1/R2498781_5.jpg	2021-01-02T15:01:26Z	</DATA>
+  <DATA>	22370920	6	https://ddfcdn.realtor.ca/listings/TS637451964870000000/reb89/highres/1/R2498781_6.jpg	2021-01-02T15:01:27Z	</DATA>
+  <DATA>	22370920	7	https://ddfcdn.realtor.ca/listings/TS637451964870000000/reb89/highres/1/R2498781_7.jpg	2021-01-02T15:01:27Z	</DATA>
+  <DATA>	22370920	8	https://ddfcdn.realtor.ca/listings/TS637451964870000000/reb89/highres/1/R2498781_8.jpg	2021-01-02T15:01:27Z	</DATA>
+  <DATA>	22370920	9	https://ddfcdn.realtor.ca/listings/TS637451964860000000/reb89/highres/1/R2498781_9.jpg	2021-01-02T15:01:26Z	</DATA>
+  <DATA>	22370920	10	https://ddfcdn.realtor.ca/listings/TS637451964860000000/reb89/highres/1/R2498781_10.jpg	2021-01-02T15:01:26Z	</DATA>
+  <DATA>	22370920	11	https://ddfcdn.realtor.ca/listings/TS637451964870000000/reb89/highres/1/R2498781_11.jpg	2021-01-02T15:01:27Z	</DATA>
+  <DATA>	22370920	12	https://ddfcdn.realtor.ca/listings/TS637451964860000000/reb89/highres/1/R2498781_12.jpg	2021-01-02T15:01:26Z	</DATA>
+  <DATA>	22370920	13	https://ddfcdn.realtor.ca/listings/TS637451964860000000/reb89/highres/1/R2498781_13.jpg	2021-01-02T15:01:26Z	</DATA>
+  <DATA>	22370920	14	https://ddfcdn.realtor.ca/listings/TS637451964880000000/reb89/highres/1/R2498781_14.jpg	2021-01-02T15:01:28Z	</DATA>
+  <DATA>	22370920	15	https://ddfcdn.realtor.ca/listings/TS637451964880000000/reb89/highres/1/R2498781_15.jpg	2021-01-02T15:01:28Z	</DATA>
+  <DATA>	22370920	16	https://ddfcdn.realtor.ca/listings/TS637451964870000000/reb89/highres/1/R2498781_16.jpg	2021-01-02T15:01:27Z	</DATA>
+</RETS>
