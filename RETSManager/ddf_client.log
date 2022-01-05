@@ -1370,3 +1370,4 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 01-05 09:48:58.155 ddf_streamer.py:51   logout                         INFO     Logout Successful
 01-05 09:48:58.155 manager.py     :310  update_server                  INFO     Server updated successfully
 01-05 09:52:41.219 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\RETS_Manager\settings.py changed, reloading.
+01-05 10:08:14.475 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\RETS_Manager\settings.py changed, reloading.
