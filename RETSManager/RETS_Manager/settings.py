@@ -27,7 +27,7 @@ SECRET_KEY = 'f(38hpt!oc982r75_ly$o&f(e1m#&-k8!#=r!605ygm94jfml4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['web','127.0.0.1', "172.105.104.8"]
+ALLOWED_HOSTS = ['web','127.0.0.1', "172.105.104.8", "btcpaystore.com", "www.btcpaystore.com"]
 
 # Application definition
 
@@ -141,5 +141,4 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
 STATIC_URL = '/static/'
 
-# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-# STATICFILES_STORAGE  = 'storages.backends.s3boto3.S3Boto3Storage'
+

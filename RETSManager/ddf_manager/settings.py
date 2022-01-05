@@ -8,7 +8,7 @@ login_url = 'http://data.crea.ca/Login.svc/Login'
 username = 'XCU4q6PZQPRX18igWenqSEhX'
 password = 'o0AGdTAbOitou6mDjfsgKYM6'
 
-s3_reader = True #Enable S3, if Disabled Local file System will be used.
+s3_reader = False #Enable S3, if Disabled Local file System will be used.
 
 SESSION_LISTINGS_COUNT=100
 
