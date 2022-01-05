@@ -595,3 +595,778 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 01-04 15:13:57.414 ddf_streamer.py:51   logout                         INFO     Logout Successful
 01-04 15:13:57.414 manager.py     :310  update_server                  INFO     Server updated successfully
 01-04 15:28:16.278 log.py         :222  log_response                   WARNING  Not Found: /listings
+01-05 07:43:18.409 log.py         :222  log_response                   ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\website\crea\RETSManager\web_app\views.py", line 48, in home_page
+    return render(request, "index.html", context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 106, in render
+    url = self.url(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 103, in url
+    return self.handle_simple(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 592, in url
+    params['Bucket'] = self.bucket.name
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 385, in bucket
+    self._bucket = self.connection.Bucket(self.bucket_name)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\factory.py", line 473, in create_resource
+    return partial(resource_cls, *positional_args,
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\base.py", line 118, in __init__
+    raise ValueError(
+ValueError: Required parameter name not set
+01-05 07:44:56.219 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\aws_settings.py changed, reloading.
+01-05 07:45:00.617 log.py         :222  log_response                   ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\website\crea\RETSManager\web_app\views.py", line 48, in home_page
+    return render(request, "index.html", context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 106, in render
+    url = self.url(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 103, in url
+    return self.handle_simple(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 592, in url
+    params['Bucket'] = self.bucket.name
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 385, in bucket
+    self._bucket = self.connection.Bucket(self.bucket_name)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\factory.py", line 473, in create_resource
+    return partial(resource_cls, *positional_args,
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\base.py", line 118, in __init__
+    raise ValueError(
+ValueError: Required parameter name not set
+01-05 07:46:35.126 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\aws_settings.py changed, reloading.
+01-05 07:46:38.208 log.py         :222  log_response                   ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\website\crea\RETSManager\web_app\views.py", line 48, in home_page
+    return render(request, "index.html", context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 106, in render
+    url = self.url(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 103, in url
+    return self.handle_simple(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 592, in url
+    params['Bucket'] = self.bucket.name
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 385, in bucket
+    self._bucket = self.connection.Bucket(self.bucket_name)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\factory.py", line 473, in create_resource
+    return partial(resource_cls, *positional_args,
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\base.py", line 118, in __init__
+    raise ValueError(
+ValueError: Required parameter name not set
+01-05 07:46:53.607 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\RETS_Manager\settings.py changed, reloading.
+01-05 07:46:56.605 log.py         :222  log_response                   ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\website\crea\RETSManager\web_app\views.py", line 48, in home_page
+    return render(request, "index.html", context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 106, in render
+    url = self.url(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 103, in url
+    return self.handle_simple(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 592, in url
+    params['Bucket'] = self.bucket.name
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 385, in bucket
+    self._bucket = self.connection.Bucket(self.bucket_name)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\factory.py", line 473, in create_resource
+    return partial(resource_cls, *positional_args,
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\base.py", line 118, in __init__
+    raise ValueError(
+ValueError: Required parameter name not set
+01-05 07:50:46.559 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\aws_settings.py changed, reloading.
+01-05 07:51:12.605 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\RETS_Manager\settings.py changed, reloading.
+01-05 07:51:22.883 log.py         :222  log_response                   ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\website\crea\RETSManager\web_app\views.py", line 48, in home_page
+    return render(request, "index.html", context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 106, in render
+    url = self.url(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 103, in url
+    return self.handle_simple(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 592, in url
+    params['Bucket'] = self.bucket.name
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 385, in bucket
+    self._bucket = self.connection.Bucket(self.bucket_name)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\factory.py", line 473, in create_resource
+    return partial(resource_cls, *positional_args,
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\base.py", line 118, in __init__
+    raise ValueError(
+ValueError: Required parameter name not set
+01-05 07:52:44.866 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\aws_settings.py changed, reloading.
+01-05 07:53:40.591 log.py         :222  log_response                   ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\website\crea\RETSManager\web_app\views.py", line 48, in home_page
+    return render(request, "index.html", context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 106, in render
+    url = self.url(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 103, in url
+    return self.handle_simple(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 592, in url
+    params['Bucket'] = self.bucket.name
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 385, in bucket
+    self._bucket = self.connection.Bucket(self.bucket_name)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\factory.py", line 473, in create_resource
+    return partial(resource_cls, *positional_args,
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\base.py", line 118, in __init__
+    raise ValueError(
+ValueError: Required parameter name not set
+01-05 07:53:54.969 log.py         :222  log_response                   ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\website\crea\RETSManager\web_app\views.py", line 48, in home_page
+    return render(request, "index.html", context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 106, in render
+    url = self.url(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 103, in url
+    return self.handle_simple(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 592, in url
+    params['Bucket'] = self.bucket.name
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 385, in bucket
+    self._bucket = self.connection.Bucket(self.bucket_name)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\factory.py", line 473, in create_resource
+    return partial(resource_cls, *positional_args,
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\base.py", line 118, in __init__
+    raise ValueError(
+ValueError: Required parameter name not set
+01-05 07:55:20.555 log.py         :222  log_response                   ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\website\crea\RETSManager\web_app\views.py", line 48, in home_page
+    return render(request, "index.html", context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 106, in render
+    url = self.url(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 103, in url
+    return self.handle_simple(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 592, in url
+    params['Bucket'] = self.bucket.name
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 385, in bucket
+    self._bucket = self.connection.Bucket(self.bucket_name)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\factory.py", line 473, in create_resource
+    return partial(resource_cls, *positional_args,
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\base.py", line 118, in __init__
+    raise ValueError(
+ValueError: Required parameter name not set
+01-05 07:55:28.297 log.py         :222  log_response                   ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\website\crea\RETSManager\web_app\views.py", line 48, in home_page
+    return render(request, "index.html", context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 106, in render
+    url = self.url(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 103, in url
+    return self.handle_simple(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 592, in url
+    params['Bucket'] = self.bucket.name
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 385, in bucket
+    self._bucket = self.connection.Bucket(self.bucket_name)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\factory.py", line 473, in create_resource
+    return partial(resource_cls, *positional_args,
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\base.py", line 118, in __init__
+    raise ValueError(
+ValueError: Required parameter name not set
+01-05 07:55:38.552 log.py         :222  log_response                   ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\website\crea\RETSManager\web_app\views.py", line 48, in home_page
+    return render(request, "index.html", context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 106, in render
+    url = self.url(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 103, in url
+    return self.handle_simple(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 592, in url
+    params['Bucket'] = self.bucket.name
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 385, in bucket
+    self._bucket = self.connection.Bucket(self.bucket_name)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\factory.py", line 473, in create_resource
+    return partial(resource_cls, *positional_args,
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\base.py", line 118, in __init__
+    raise ValueError(
+ValueError: Required parameter name not set
+01-05 07:56:06.473 log.py         :222  log_response                   ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\website\crea\RETSManager\web_app\views.py", line 48, in home_page
+    return render(request, "index.html", context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 106, in render
+    url = self.url(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 103, in url
+    return self.handle_simple(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 592, in url
+    params['Bucket'] = self.bucket.name
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 385, in bucket
+    self._bucket = self.connection.Bucket(self.bucket_name)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\factory.py", line 473, in create_resource
+    return partial(resource_cls, *positional_args,
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\base.py", line 118, in __init__
+    raise ValueError(
+ValueError: Required parameter name not set
+01-05 07:56:07.730 log.py         :222  log_response                   ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\website\crea\RETSManager\web_app\views.py", line 48, in home_page
+    return render(request, "index.html", context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 106, in render
+    url = self.url(context)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 103, in url
+    return self.handle_simple(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 592, in url
+    params['Bucket'] = self.bucket.name
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\storages\backends\s3boto3.py", line 385, in bucket
+    self._bucket = self.connection.Bucket(self.bucket_name)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\factory.py", line 473, in create_resource
+    return partial(resource_cls, *positional_args,
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\boto3\resources\base.py", line 118, in __init__
+    raise ValueError(
+ValueError: Required parameter name not set
+01-05 08:01:52.298 ddf_streamer.py:32   login                          INFO     ===========================================================================
+01-05 08:01:53.058 ddf_streamer.py:35   login                          INFO     Login Successful
+01-05 08:01:53.144 ddf_client.py  :272  update_listings                INFO     Update Listings Started
+01-05 08:01:54.564 ddf_client.py  :160  download_active_listings       INFO     10 active listings found since 2022-01-01T23:13:55Z
+01-05 08:01:54.564 ddf_client.py  :183  download_active_listings       INFO     10 new active listing successfully downloaded
+01-05 08:01:54.564 ddf_client.py  :285  update_listings                WARNING  Download by ID is skipped as limit is reached through active listing search
+01-05 08:01:54.564 ddf_client.py  :452  update                         INFO     Listing Update Completed
+01-05 08:01:56.810 ddf_media.py   :319  download_photos                INFO     All New 10 Listing Photos were Downloaded Successfully
+01-05 08:01:56.811 ddf_client.py  :462  update                         INFO     Data Update was successful
+01-05 08:01:58.112 db_write.py    :177  update_records                 INFO     New Listings       : 2
+01-05 08:01:58.112 db_write.py    :178  update_records                 INFO     Updated Listings   : 0
+01-05 08:01:58.112 db_write.py    :179  update_records                 INFO     No Change Listings : 8
+01-05 08:01:58.112 db_write.py    :180  update_records                 INFO     No Address Listings: 0
+01-05 08:01:58.112 manager.py     :56   delete_records                 INFO     Deleted 0 old record from DB
+01-05 08:01:58.114 manager.py     :279  update_db                      INFO     DB updated successfully
+01-05 08:01:58.394 ddf_streamer.py:51   logout                         INFO     Logout Successful
+01-05 08:01:58.394 manager.py     :310  update_server                  INFO     Server updated successfully
+01-05 08:02:15.445 ddf_streamer.py:32   login                          INFO     ===========================================================================
+01-05 08:02:15.707 ddf_streamer.py:35   login                          INFO     Login Successful
+01-05 08:02:15.760 ddf_client.py  :272  update_listings                INFO     Update Listings Started
+01-05 08:02:16.940 ddf_client.py  :160  download_active_listings       INFO     10 active listings found since 2022-01-02T16:01:53Z
+01-05 08:02:16.941 ddf_client.py  :183  download_active_listings       INFO     10 new active listing successfully downloaded
+01-05 08:02:16.941 ddf_client.py  :285  update_listings                WARNING  Download by ID is skipped as limit is reached through active listing search
+01-05 08:02:16.941 ddf_client.py  :452  update                         INFO     Listing Update Completed
+01-05 08:02:19.665 ddf_media.py   :319  download_photos                INFO     All New 10 Listing Photos were Downloaded Successfully
+01-05 08:02:19.666 ddf_client.py  :462  update                         INFO     Data Update was successful
+01-05 08:02:24.472 db_write.py    :177  update_records                 INFO     New Listings       : 10
+01-05 08:02:24.472 db_write.py    :178  update_records                 INFO     Updated Listings   : 0
+01-05 08:02:24.472 db_write.py    :179  update_records                 INFO     No Change Listings : 0
+01-05 08:02:24.472 db_write.py    :180  update_records                 INFO     No Address Listings: 0
+01-05 08:02:24.473 manager.py     :56   delete_records                 INFO     Deleted 0 old record from DB
+01-05 08:02:24.473 manager.py     :279  update_db                      INFO     DB updated successfully
+01-05 08:02:24.741 ddf_streamer.py:51   logout                         INFO     Logout Successful
+01-05 08:02:24.741 manager.py     :310  update_server                  INFO     Server updated successfully
+01-05 08:04:40.766 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\settings.py changed, reloading.
+01-05 08:16:06.151 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\aws_settings.py changed, reloading.
+01-05 08:16:13.677 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\settings.py changed, reloading.
+01-05 08:16:49.153 ddf_streamer.py:32   login                          INFO     ===========================================================================
+01-05 08:16:49.710 ddf_streamer.py:35   login                          INFO     Login Successful
+01-05 08:16:49.801 ddf_client.py  :272  update_listings                INFO     Update Listings Started
+01-05 08:16:51.139 ddf_client.py  :160  download_active_listings       INFO     10 active listings found since 2022-01-02T16:02:15Z
+01-05 08:16:51.139 ddf_client.py  :183  download_active_listings       INFO     10 new active listing successfully downloaded
+01-05 08:16:51.140 ddf_client.py  :285  update_listings                WARNING  Download by ID is skipped as limit is reached through active listing search
+01-05 08:16:51.140 ddf_client.py  :452  update                         INFO     Listing Update Completed
+01-05 08:16:52.285 ddf_s3.py      :268  download_photos                INFO     All New 10 Listing Photos were Downloaded Successfully
+01-05 08:16:52.286 ddf_client.py  :462  update                         INFO     Data Update was successful
+01-05 08:16:52.300 db_write.py    :177  update_records                 INFO     New Listings       : 0
+01-05 08:16:52.300 db_write.py    :178  update_records                 INFO     Updated Listings   : 0
+01-05 08:16:52.300 db_write.py    :179  update_records                 INFO     No Change Listings : 10
+01-05 08:16:52.300 db_write.py    :180  update_records                 INFO     No Address Listings: 0
+01-05 08:16:52.301 manager.py     :56   delete_records                 INFO     Deleted 0 old record from DB
+01-05 08:16:52.304 manager.py     :279  update_db                      INFO     DB updated successfully
+01-05 08:16:52.541 ddf_streamer.py:51   logout                         INFO     Logout Successful
+01-05 08:16:52.542 manager.py     :310  update_server                  INFO     Server updated successfully
+01-05 08:20:51.119 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\aws_settings.py changed, reloading.
+01-05 09:10:12.215 log.py         :222  log_response                   ERROR    Internal Server Error: /home-search/
+Traceback (most recent call last):
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\website\crea\RETSManager\web_app\views.py", line 62, in home_search_page
+    ddf_info = json.loads(response.text)
+  File "c:\users\conormc\appdata\local\programs\python\python38-32\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "c:\users\conormc\appdata\local\programs\python\python38-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "c:\users\conormc\appdata\local\programs\python\python38-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+01-05 09:10:38.888 log.py         :222  log_response                   WARNING  Not Found: /neighbourhoods
+01-05 09:17:58.252 ddf_streamer.py:32   login                          INFO     ===========================================================================
+01-05 09:17:58.571 ddf_streamer.py:35   login                          INFO     Login Successful
+01-05 09:17:58.729 ddf_client.py  :272  update_listings                INFO     Update Listings Started
+01-05 09:17:59.214 ddf_client.py  :160  download_active_listings       INFO     10 active listings found since 2022-01-02T16:16:49Z
+01-05 09:17:59.215 ddf_client.py  :183  download_active_listings       INFO     10 new active listing successfully downloaded
+01-05 09:17:59.215 ddf_client.py  :285  update_listings                WARNING  Download by ID is skipped as limit is reached through active listing search
+01-05 09:17:59.215 ddf_client.py  :452  update                         INFO     Listing Update Completed
+01-05 09:17:59.860 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:17:59.862 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23459832/None.jpg
+01-05 09:17:59.995 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:17:59.996 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23467382/None.jpg
+01-05 09:18:00.118 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:18:00.118 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23911848/None.jpg
+01-05 09:18:00.241 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:18:00.241 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23859922/None.jpg
+01-05 09:18:00.400 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:18:00.400 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23823211/None.jpg
+01-05 09:18:00.623 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:18:00.623 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23913853/None.jpg
+01-05 09:18:00.623 ddf_s3.py      :268  download_photos                INFO     All New 10 Listing Photos were Downloaded Successfully
+01-05 09:18:00.624 ddf_client.py  :462  update                         INFO     Data Update was successful
+01-05 09:18:04.009 db_write.py    :177  update_records                 INFO     New Listings       : 6
+01-05 09:18:04.009 db_write.py    :178  update_records                 INFO     Updated Listings   : 0
+01-05 09:18:04.009 db_write.py    :179  update_records                 INFO     No Change Listings : 4
+01-05 09:18:04.009 db_write.py    :180  update_records                 INFO     No Address Listings: 0
+01-05 09:18:04.012 manager.py     :56   delete_records                 INFO     Deleted 0 old record from DB
+01-05 09:18:04.014 manager.py     :279  update_db                      INFO     DB updated successfully
+01-05 09:18:04.183 ddf_streamer.py:51   logout                         INFO     Logout Successful
+01-05 09:18:04.184 manager.py     :310  update_server                  INFO     Server updated successfully
+01-05 09:21:10.925 ddf_streamer.py:32   login                          INFO     ===========================================================================
+01-05 09:21:11.295 ddf_streamer.py:35   login                          INFO     Login Successful
+01-05 09:21:11.426 ddf_client.py  :272  update_listings                INFO     Update Listings Started
+01-05 09:21:11.704 ddf_client.py  :160  download_active_listings       INFO     10 active listings found since 2022-01-02T17:17:58Z
+01-05 09:21:11.704 ddf_client.py  :183  download_active_listings       INFO     10 new active listing successfully downloaded
+01-05 09:21:11.704 ddf_client.py  :285  update_listings                WARNING  Download by ID is skipped as limit is reached through active listing search
+01-05 09:21:11.704 ddf_client.py  :452  update                         INFO     Listing Update Completed
+01-05 09:21:11.852 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:21:11.853 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23880134/None.jpg
+01-05 09:21:11.995 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:21:11.995 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23773291/None.jpg
+01-05 09:21:12.129 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:21:12.129 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23878443/None.jpg
+01-05 09:21:12.264 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:21:12.264 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23889491/None.jpg
+01-05 09:21:12.476 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:21:12.476 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23892239/None.jpg
+01-05 09:21:12.609 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:21:12.609 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23895169/None.jpg
+01-05 09:21:12.753 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:21:12.754 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23914195/None.jpg
+01-05 09:21:12.898 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:21:12.899 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23914350/None.jpg
+01-05 09:21:13.030 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:21:13.030 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23914465/None.jpg
+01-05 09:21:13.236 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:21:13.236 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23914466/None.jpg
+01-05 09:21:13.236 ddf_s3.py      :268  download_photos                INFO     All New 10 Listing Photos were Downloaded Successfully
+01-05 09:21:13.237 ddf_client.py  :462  update                         INFO     Data Update was successful
+01-05 09:21:19.043 db_write.py    :177  update_records                 INFO     New Listings       : 10
+01-05 09:21:19.043 db_write.py    :178  update_records                 INFO     Updated Listings   : 0
+01-05 09:21:19.044 db_write.py    :179  update_records                 INFO     No Change Listings : 0
+01-05 09:21:19.044 db_write.py    :180  update_records                 INFO     No Address Listings: 0
+01-05 09:21:19.049 manager.py     :56   delete_records                 INFO     Deleted 0 old record from DB
+01-05 09:21:19.053 manager.py     :279  update_db                      INFO     DB updated successfully
+01-05 09:21:19.245 ddf_streamer.py:51   logout                         INFO     Logout Successful
+01-05 09:21:19.245 manager.py     :310  update_server                  INFO     Server updated successfully
+01-05 09:24:52.221 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\web_app\views.py changed, reloading.
+01-05 09:47:27.148 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\web_app\views.py changed, reloading.
+01-05 09:47:36.607 ddf_streamer.py:32   login                          INFO     ===========================================================================
+01-05 09:47:36.968 ddf_streamer.py:35   login                          INFO     Login Successful
+01-05 09:47:37.084 ddf_client.py  :272  update_listings                INFO     Update Listings Started
+01-05 09:47:38.772 ddf_client.py  :160  download_active_listings       INFO     3683 active listings found since 2022-01-02T17:21:11Z
+01-05 09:47:56.934 ddf_streamer.py:32   login                          INFO     ===========================================================================
+01-05 09:48:01.103 ddf_streamer.py:41   login                          ERROR    Additional login not permitted
+01-05 09:48:01.190 ddf_client.py  :272  update_listings                INFO     Update Listings Started
+01-05 09:48:02.741 ddf_client.py  :160  download_active_listings       INFO     3683 active listings found since 2022-01-02T17:21:11Z
+01-05 09:48:34.280 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\web_app\views.py changed, reloading.
+01-05 09:48:42.925 ddf_streamer.py:32   login                          INFO     ===========================================================================
+01-05 09:48:43.289 ddf_streamer.py:35   login                          INFO     Login Successful
+01-05 09:48:43.400 ddf_client.py  :272  update_listings                INFO     Update Listings Started
+01-05 09:48:44.791 ddf_client.py  :160  download_active_listings       INFO     10 active listings found since 2022-01-02T17:21:11Z
+01-05 09:48:44.791 ddf_client.py  :183  download_active_listings       INFO     10 new active listing successfully downloaded
+01-05 09:48:44.793 ddf_client.py  :285  update_listings                WARNING  Download by ID is skipped as limit is reached through active listing search
+01-05 09:48:44.793 ddf_client.py  :452  update                         INFO     Listing Update Completed
+01-05 09:48:45.721 ddf_s3.py      :268  download_photos                INFO     All New 10 Listing Photos were Downloaded Successfully
+01-05 09:48:45.722 ddf_client.py  :462  update                         INFO     Data Update was successful
+01-05 09:48:45.752 db_write.py    :177  update_records                 INFO     New Listings       : 0
+01-05 09:48:45.752 db_write.py    :178  update_records                 INFO     Updated Listings   : 0
+01-05 09:48:45.753 db_write.py    :179  update_records                 INFO     No Change Listings : 10
+01-05 09:48:45.753 db_write.py    :180  update_records                 INFO     No Address Listings: 0
+01-05 09:48:45.754 manager.py     :56   delete_records                 INFO     Deleted 0 old record from DB
+01-05 09:48:45.756 manager.py     :279  update_db                      INFO     DB updated successfully
+01-05 09:48:46.000 ddf_streamer.py:51   logout                         INFO     Logout Successful
+01-05 09:48:46.000 manager.py     :310  update_server                  INFO     Server updated successfully
+01-05 09:48:48.506 ddf_streamer.py:32   login                          INFO     ===========================================================================
+01-05 09:48:48.735 ddf_streamer.py:35   login                          INFO     Login Successful
+01-05 09:48:48.838 ddf_client.py  :272  update_listings                INFO     Update Listings Started
+01-05 09:48:50.041 ddf_client.py  :160  download_active_listings       INFO     10 active listings found since 2022-01-02T17:48:43Z
+01-05 09:48:50.041 ddf_client.py  :183  download_active_listings       INFO     10 new active listing successfully downloaded
+01-05 09:48:50.041 ddf_client.py  :285  update_listings                WARNING  Download by ID is skipped as limit is reached through active listing search
+01-05 09:48:50.041 ddf_client.py  :452  update                         INFO     Listing Update Completed
+01-05 09:48:50.267 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:48:50.267 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23872716/None.jpg
+01-05 09:48:50.476 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:48:50.476 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23861735/None.jpg
+01-05 09:48:50.663 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:48:50.664 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23859245/None.jpg
+01-05 09:48:50.834 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:48:50.835 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23910312/None.jpg
+01-05 09:48:51.087 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:48:51.087 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23855172/None.jpg
+01-05 09:48:51.245 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:48:51.245 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23912711/None.jpg
+01-05 09:48:51.411 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:48:51.411 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23903537/None.jpg
+01-05 09:48:51.666 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:48:51.667 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23855170/None.jpg
+01-05 09:48:51.925 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:48:51.925 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23805665/None.jpg
+01-05 09:48:52.206 ddf_s3.py      :113  save_photo                     ERROR    expected string or bytes-like object
+01-05 09:48:52.207 ddf_s3.py      :114  save_photo                     ERROR    Failed to save photo: media/listings/23914596/None.jpg
+01-05 09:48:52.207 ddf_s3.py      :268  download_photos                INFO     All New 10 Listing Photos were Downloaded Successfully
+01-05 09:48:52.208 ddf_client.py  :462  update                         INFO     Data Update was successful
+01-05 09:48:57.804 db_write.py    :177  update_records                 INFO     New Listings       : 10
+01-05 09:48:57.805 db_write.py    :178  update_records                 INFO     Updated Listings   : 0
+01-05 09:48:57.805 db_write.py    :179  update_records                 INFO     No Change Listings : 0
+01-05 09:48:57.805 db_write.py    :180  update_records                 INFO     No Address Listings: 0
+01-05 09:48:57.805 manager.py     :56   delete_records                 INFO     Deleted 0 old record from DB
+01-05 09:48:57.806 manager.py     :279  update_db                      INFO     DB updated successfully
+01-05 09:48:58.155 ddf_streamer.py:51   logout                         INFO     Logout Successful
+01-05 09:48:58.155 manager.py     :310  update_server                  INFO     Server updated successfully
+01-05 09:52:41.219 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\RETS_Manager\settings.py changed, reloading.

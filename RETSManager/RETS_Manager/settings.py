@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'ddf_manager.ddf_client',
     'celery',
     'web_app',
+
 ]
 
 MIDDLEWARE = [
@@ -139,3 +140,6 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
 STATIC_URL = '/static/'
+
+# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+# STATICFILES_STORAGE  = 'storages.backends.s3boto3.S3Boto3Storage'

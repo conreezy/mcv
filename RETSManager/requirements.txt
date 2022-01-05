@@ -7,3 +7,4 @@ redis==2.10.6
 xmltodict==0.11.0
 kombu==4.2.0
 psycopg2
+
