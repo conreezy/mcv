@@ -16,5 +16,5 @@ def setup_periodic_tasks(sender, **kwargs):
 def update_ddf():
     from .manager import update_server
     acquire_lock = lambda: cache.add(1, "true", LOCK_EXPIRE)
-    update_server(sample=True)
+    update_server(sample=False)
     release_lock = lambda: cache.delete(1)
