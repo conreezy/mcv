@@ -32,18 +32,7 @@ def test_ddf(request):
 def home_page(request):
     title = "Home"
 
-    ### --- DDF api
-    # url = 'https://data.crea.ca/Login.svc/Login'
-
-    # headers = {'username': '40re0H4jZqvcTSOaxBji22S0',
-    #            'password': 'QB4zjCqcLSJgfZfKnDfjJe0m'} 
-
-    # session = Session()
-    # session.headers.update(headers)
-    # response = session.get(url)
-    # ddf_info = json.loads(response.text)
-
-    listings = Address.objects(city="Ottawa")
+    listings = Address.objects.filter(City="Ottawa")
     context = {"title": title,'listings': listings}
     return render(request, "index.html", context)
 

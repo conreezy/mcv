@@ -2557,3 +2557,111 @@ ModuleNotFoundError: No module named 'storages'
 01-24 12:36:37.492 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\web_app\views.py changed, reloading.
 01-24 12:41:04.893 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\web_app\views.py changed, reloading.
 01-24 12:41:11.448 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\web_app\views.py changed, reloading.
+01-24 12:53:07.028 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\web_app\views.py changed, reloading.
+01-24 13:02:41.766 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\RETS_Manager\settings.py changed, reloading.
+01-24 13:02:52.845 log.py         :222  log_response                   WARNING  Not Found: /support/conreezy/
+01-24 13:02:56.950 log.py         :222  log_response                   ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\website\crea\RETSManager\web_app\views.py", line 35, in home_page
+    #listings = Address.objects(city="Ottawa")
+TypeError: 'Manager' object is not callable
+01-24 13:03:00.791 log.py         :222  log_response                   ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\website\crea\RETSManager\web_app\views.py", line 35, in home_page
+    #listings = Address.objects(city="Ottawa")
+TypeError: 'Manager' object is not callable
+01-24 13:03:18.516 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\web_app\views.py changed, reloading.
+01-24 13:03:21.660 log.py         :222  log_response                   ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\website\crea\RETSManager\web_app\views.py", line 35, in home_page
+    #listings = Address.objects(city="Ottawa")
+TypeError: 'Manager' object is not callable
+01-24 13:03:26.808 log.py         :222  log_response                   WARNING  Not Found: /support/conreezy/
+01-24 13:03:34.913 log.py         :222  log_response                   ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\website\crea\RETSManager\web_app\views.py", line 35, in home_page
+    #listings = Address.objects(city="Ottawa")
+TypeError: 'Manager' object is not callable
+01-24 13:04:48.800 log.py         :222  log_response                   WARNING  Not Found: /support/conreezy/
+01-24 13:04:55.787 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\web_app\views.py changed, reloading.
+01-24 13:05:04.010 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\web_app\views.py changed, reloading.
+01-24 13:05:18.616 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\web_app\views.py changed, reloading.
+01-24 13:05:20.318 log.py         :222  log_response                   WARNING  Not Found: /support/conreezy/
+01-24 13:05:20.448 log.py         :222  log_response                   ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\website\crea\RETSManager\web_app\views.py", line 35, in home_page
+    listings = Address.objects.filter(city="Ottawa")
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\db\models\query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\db\models\query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\db\models\sql\query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\db\models\sql\query.py", line 1315, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\db\models\sql\query.py", line 1190, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\db\models\sql\query.py", line 1049, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\conormc\.virtualenvs\crea-I1wVrwTJ\lib\site-packages\django\db\models\sql\query.py", line 1419, in names_to_path
+    raise FieldError("Cannot resolve keyword '%s' into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'city' into field. Choices are: AdditionalStreetInfo, AddressLine1, AddressLine2, Agent, Agent_id, BoxNumber, City, CommunityName, Country, Neighbourhood, Office, Office_id, PostalCode, Property, Property_id, Province, StreetAddress, StreetDirectionPrefix, StreetDirectionSuffix, StreetName, StreetNumber, StreetSuffix, Subdivision, UnitNumber, id
+01-24 13:05:30.249 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\web_app\views.py changed, reloading.
+01-24 13:05:50.795 log.py         :222  log_response                   WARNING  Not Found: /support/conreezy/
+01-24 13:06:21.805 log.py         :222  log_response                   WARNING  Not Found: /support/conreezy/
+01-24 13:06:52.809 log.py         :222  log_response                   WARNING  Not Found: /support/conreezy/
+01-24 13:07:23.799 log.py         :222  log_response                   WARNING  Not Found: /support/conreezy/
+01-24 13:07:54.808 log.py         :222  log_response                   WARNING  Not Found: /support/conreezy/
+01-24 13:08:25.799 log.py         :222  log_response                   WARNING  Not Found: /support/conreezy/
+01-24 13:08:56.797 log.py         :222  log_response                   WARNING  Not Found: /support/conreezy/
+01-24 13:09:27.819 log.py         :222  log_response                   WARNING  Not Found: /support/conreezy/
+01-24 13:09:58.817 log.py         :222  log_response                   WARNING  Not Found: /support/conreezy/
+01-24 13:10:29.811 log.py         :222  log_response                   WARNING  Not Found: /support/conreezy/
+01-24 13:11:00.800 log.py         :222  log_response                   WARNING  Not Found: /support/conreezy/
+01-24 13:11:31.825 log.py         :222  log_response                   WARNING  Not Found: /support/conreezy/
+01-24 13:12:02.841 log.py         :222  log_response                   WARNING  Not Found: /support/conreezy/
+01-24 13:22:00.325 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\aws_settings.py changed, reloading.
+01-24 13:22:12.700 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\aws_settings.py changed, reloading.
+01-24 13:22:49.011 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\aws_settings.py changed, reloading.
+01-24 13:23:28.346 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\aws_settings.py changed, reloading.
+01-24 13:23:41.990 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\aws_settings.py changed, reloading.
+01-24 13:23:48.374 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\aws_settings.py changed, reloading.
+01-24 13:25:01.216 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\aws_settings.py changed, reloading.
+01-24 13:25:39.908 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\aws_settings.py changed, reloading.
+01-24 13:25:51.068 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\aws_settings.py changed, reloading.
+01-24 13:29:10.209 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\aws_settings.py changed, reloading.
+01-24 13:29:38.115 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\aws_settings.py changed, reloading.
+01-24 13:29:57.524 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\aws_settings.py changed, reloading.
+01-24 13:30:03.010 autoreload.py  :203  trigger_reload                 INFO     G:\website\crea\RETSManager\ddf_manager\aws_settings.py changed, reloading.
