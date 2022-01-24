@@ -43,7 +43,7 @@ def home_page(request):
     # response = session.get(url)
     # ddf_info = json.loads(response.text)
 
-    listings = Address.objects.all()[:200]
+    listings = Address.objects(city="Ottawa")
     context = {"title": title,'listings': listings}
     return render(request, "index.html", context)
 
