@@ -32,7 +32,7 @@ from .views import (
 
     renters_page,
     testimonials_page
-)
+)x c
 
 urlpatterns = [
 
