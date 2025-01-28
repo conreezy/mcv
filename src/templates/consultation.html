@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% include "top_banner.html" %}
+{% load static %} 
+
+<div class='container'>
+	<div class='row my-3 justify-content-center'>
+		<div class='col-lg-6'>
+			<h3 class='pb-3'>Are you planning to sell your home?</h3>
+			<p>We can discuss the details of selling your home.</p>
+			<br>
+			<p>We can walk you through every step of the process and explain the service we provide. </p>
+			<br>
+			<p>We will also provide you with our opinion of value for your home. </p>
+			<br>
+			<p>Submit the contact form and we will get back to your right away to set up the meeting.</p>
+			<br>
+	   		<img class='pb-3' style='max-width:100%;' src= "{% static 'image/banner/ban_6.jpg' %}" alt="jeff and kathy ottawa realtors">
+		</div>
+		<div class='col-lg-6'>
+			<h3 class='pb-3'>Contact us today!</h3>
+			{% include 'form.html' %}
+		</div>
+	</div>
+</div>
+
+{% endblock %}

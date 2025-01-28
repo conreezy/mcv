@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% include "top_banner.html" %}
+
+<div class='container'>
+	<div class='row my-3 justify-content-center'>
+		<div class='col-lg-12'>
+			<h3>3-4 Weeks Prior To Move</h3>
+			<p>→ Book a moving company!</p>
+			<p>→ Make an inventory of everything to be moved</p>
+			<p>→ Donate any unwanted clothing or furniture</p>
+			<p>→ Contact insurance company to transfer policies (life,homeowners)</p>
+			<p>→ Request change of address kit from post-office</p>
+			<p>→ Prepare a list of friends, business firms and personal accounts who should be notified of your upcoming move</p>
+
+			<br>
+			<h5>Arrange cut-off/activation of utility companies</h5>
+			<p>→ Telephone / TV / Internet</p>
+			<p>(Bell Canada: 1-866-301-1942)</p>
+			<p>(Rogers: 1 877 559-5202)</p>
+			<p>→ Gas/Electricity/Water</p>
+			<p>(Enbridge Gas: 1-877-362-7434)</p>
+			<p>(Hydro Ottawa: 613-738-6400)</p>
+			<p>(City of Ottawa: 613-580-2400)</p>		
+
+			<br>
+			<h3>2 Weeks Prior To Move</h3>
+			<p>→ Purchase any moving supplies</p>
+			<p>→ Make an appointment with a service technician to prepare major appliances for shipment (i.e. plumber, electrician)</p>
+			<p>→ Have rugs and draperies cleaned and leave wrapped when returned</p>
+			<p>→ Obtain written appraisal of antique items to verify value</p>
+
+			<br>
+			<h3>1 Week Prior To Move</h3>
+			<p>→ Check furniture for dents and scratches</p>
+			<p>→ Label items you need to access easily</p>
+			<p>→ Clean out the refrigerator/plan to defrost and dry day before move</p>
+			<p>→ Drain equipment: water hoses, propane tank, gas/oil lawnmowers</p>
+			<p>→ Schedule to have utilities turn on at your new home/p>
+			<p>→ Make a plan to transport house plants</p>
+			<p>→ Confirm travel arrangements for pets and family</p>
+
+			<br>
+			<h3>Day of Move</h3>
+			<p>→ Designate boxes and items as “last load” items</p>
+			<p>→ All loose items are packed into boxes with the top closed</p>
+			<p>→ All electronics are unplugged from a power source.</p>
+			<p>→ All pictures are removed from the walls</p>
+			<p>→ All boxes are labeled with their destination room in your new home on the top and sides of each box</p>
+			<p>→ All heavy and breakable items are removed from dressers and desks</p>
+			<p>→ All contents are removed from appliances</p>
+			<p>→ All items are removed from the top of furniture</p>
+			<p>→ All linens are removed from beds</p>
+			<p>→ All rooms, closets, cabinets have been checked</p>
+			<p>→ Disassemble bedroom sets to save time</p>
+
+			<br>
+			<h3>Before you leave the house</h3>
+			<p>→ Water shut off</p>
+			<p>→ A/C shut off</p>
+			<p>→ Lights turned off</p>
+			<p>→ Windows shut and locked</p>
+			<p>→ Surrender house keys to lawyer</p>
+			<p>→ Check for items left behind</p>
+			<hr>
+			<br>
+			<h3>We would love to hear from you!</h3>
+			{% load static %} 
+	   		<img class='pb-3' style='max-width:100%;' src= "{% static 'image/banner/ban_6.jpg' %}" alt="jeff and kathy ottawa realtors">
+	   		<br>
+	   		<h3>Contact Us Today!</h3>
+	   		<form method='POST' action='.' enctype='multipart/form-data'> {% csrf_token %}
+				{{ form.as_p }}
+				<button class="btn btn-danger">  Submit  </button>
+			</form>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

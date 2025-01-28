@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% include "top_banner.html" %}
+
+<div class='container'>
+	<div class='row my-3'>
+		<div class='col-12 pb-3'>
+			<div id="eventbrite-widget-container-99252862985"></div>
+
+			<script src="https://www.eventbrite.ca/static/widgets/eb_widgets.js"></script>
+
+			<script type="text/javascript">
+			    var exampleCallback = function() {
+			        console.log('Order complete!');
+			    };
+
+			    window.EBWidgets.createWidget({
+			        // Required
+			        widgetType: 'checkout',
+			        eventId: '99252862985',
+			        iframeContainerId: 'eventbrite-widget-container-99252862985',
+
+			        // Optional
+			        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+			        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+			    });
+			</script>
+		</div>
+		<div class='col-sm-6' style="text-align:left;">
+			<h4>Location</h4>
+				<p>Royal Lepage Performance Realty</p>
+				<p>201-1500 Bank Street</p>
+				<p>Ottawa, ON, K1H 7Z2</p>
+			<br>
+			<h4>Content</h4>
+			<p>At this first time home buyer seminar in Ottawa you will hear from local industry professionals. A financial advisor, mortgage broker and real estate agent will share knowledge relating to their area of expertise. Each will go over some basics while answering any questions.
+			</p>
+			<br>
+			<h4>The Following Topics Will be Discussed</h4><br>
+			<ul>
+			<li>Saving for your first home and how to utilize government benefits.</li><br>
+			<li>Determining how much you can afford and how to get approved for a mortgage.</li><br>
+			<li>The home searching and buying process.</li>
+			<ul>
+		</div>
+
+		<div class='col-sm-6'>
+			<h4>Presenters</h4>
+			<div class='container'>
+				<div class='row'>
+
+					<div class='col-6'>
+						<div class="card">
+						  {% load static %} 
+						  <img src="{% static 'image/realtors/kathy_contact.jpg' %}" class="card-img-top" alt="Kathy McVeigh Ottawa Real Estate Agent">
+						  <div class="card-body">
+						    <h5 style='margin: 0px;' class="card-title">Kathy McVeigh</h5>
+						    <p class="card-text">Real Estate Agent</p>
+						    <a href="#" class="btn btn-danger mt-2">Contact</a>
+						  </div>
+						</div>
+					</div>
+
+					<div class='col-6'>
+						<div class="card">
+						  {% load static %} 
+						  <img src="{% static 'image/realtors/kathy_contact.jpg' %}" class="card-img-top" alt="Daryl MacLean Ottawa Mortgage Broker">
+						  <div class="card-body">
+						    <h5 style='margin: 0px;' class="card-title">Carla McVeigh</h5>
+						    <p class="card-text">Mortgage Broker</p>
+						    <a href="#" class="btn btn-danger mt-2">Contact</a>
+						  </div>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

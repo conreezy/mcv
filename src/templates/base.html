@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--- Head -->
+<head>
+	<!--- Required Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="{{ description }}">
+  	<meta name="keywords" content="{{ keywords }}">
+	
+	{% load static %}
+	<!--- CSS File Link -->
+	<link href="{% static 'css/style.css' %}" rel="stylesheet">
+	<!--- Bootsrtap CSS -->
+	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+	
+	<title>{% block title %} {{ title }} {% endblock %} • McVeigh Real Estate Ottawa</title>
+</head>
+<body>
+	<div class='main-wrap'>
+	{% include 'navbar.html' %}
+
+	{% block content %}
+	{% endblock content %}
+
+	</div>
+
+	<!--- j Query -->
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<!--- Bootsrtap JS -->
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<!-- IDX -->
+	<script src="https://kestrel.idxhome.com/ihf-kestrel.js"></script>
+	<script>
+		window.ihfKestrel = window.ihfKestrel || {};
+		ihfKestrel.config = {
+			platform: "",
+			activationToken: "C608E7A7-155D-6043-053B36D973DBD7D8",
+		};
+	</script>
+
+	{% block javascript %}
+	{% endblock javascript %}
+
+</body>
+<footer>
+{% include 'footer.html' %}
+</footer>
+
+
+</html>

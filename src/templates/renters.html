@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% include "top_banner.html" %}
+
+<div class='container'>
+	<div class='row m-3'>
+		<div class='col'>
+			<h3>Downloadable Rental Forms (PDF)</h3>
+			{%load static%}
+			<a href="pdfs/Ontario_Residential_Tenancy_Agreement_2019_Editable.pdf" download="Ontario_Residential_Tenancy_Agreement_2019_Editable" src="{% static 'pdfs/Ontario_Residential_Tenancy_Agreement_2019_Editable.pdf' %}" alt="Ontario Residential Tenancy Agreement 2019 Editable">Form
+			</a>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

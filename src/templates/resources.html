@@ -1,0 +1,200 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% include "top_banner.html" %}
+<div class='container'>
+	<div class="row pt-4">
+	  <div class="col-5">
+	    <div class="list-group" id="list-tab" role="tablist">
+	      <a class="list-group-item list-group-item-action active" id="list-utility-list" data-toggle="list" href="#list-utility" role="tab" aria-controls="home">Utility Providers</a>
+	      <a class="list-group-item list-group-item-action" style='' id="list-profile-list" data-toggle="list" href="#list-inspector" role="tab" aria-controls="profile">Building Inspectors</a>
+	      <a class="list-group-item list-group-item-action" id="list-lawyer-list" data-toggle="list" href="#list-lawyer" role="tab" aria-controls="lawyer">Lawyers</a>
+	      <a class="list-group-item list-group-item-action" id="list-mortgage-list" data-toggle="list" href="#list-mortgage" role="tab" aria-controls="mortgage">Mortgage Agents</a>
+	      <a class="list-group-item list-group-item-action" id="list-moving-list" data-toggle="list" href="#list-moving" role="tab" aria-controls="moving">Moving Companies</a>
+	      <a class="list-group-item list-group-item-action" id="list-improvement-list" data-toggle="list" href="#list-improvement" role="tab" aria-controls="improvement">Home Improvement</a>
+	      <a class="list-group-item list-group-item-action" id="list-roofing-list" data-toggle="list" href="#list-roofing" role="tab" aria-controls="roofing">Roofing Companies</a>
+	      <a class="list-group-item list-group-item-action" id="list-downsize-list" data-toggle="list" href="#list-downsize" role="tab" aria-controls="downsize">Downsizing Services</a>
+	      <a class="list-group-item list-group-item-action" id="list-painter-list" data-toggle="list" href="#list-painter" role="tab" aria-controls="painter">Painters</a>
+	    </div>
+	  </div>
+	  <div class="col-7">
+	    <div class="tab-content" id="nav-tabContent">
+	      <div class="tab-pane fade show active" id="list-utility" role="tabpanel" aria-labelledby="list-utility-list">
+	      	<b><p>Enbirdge Gas</p></b>
+	      	<a href='tel:1-877-362-7434'>1-877-362-7434</a><br>
+	      	<a href='http://www.enbridgegas.com' target="_blank">www.enbridgegas.com</a>
+	      	<hr>
+	      	<b><p>Hydro Ottawa</p></b>
+	      	<a href='tel:613-738-6400'>613-738-6400</a><br>
+	      	<a href='http://www.hydroottawa.com' target="_blank">www.hydroottawa.com</a>
+	      	<hr>
+	      	<b><p>Bell Canada</p></b>
+	      	<a href='tel:1-866-301-1942'>1-866-301-1942</a><br>
+	      	<a href='http://www.bell.ca' target="_blank">www.bell.ca</a>
+	      	<hr>
+	      	<b><p>Rogers</p></b>
+	      	<a href='tel:1 877 559-5202'>1 877-559-5202</a><br>
+	      	<a href='http://www.rogers.com' target="_blank">www.rogers.com</a>
+	      	<hr>
+	      	<b><p>City of Ottawa</p></b>
+	      	<a href='tel:1-877-362-7434'>1-877-362-7434</a><br>
+	      	<a href='http://www.ottawa.ca' target="_blank">www.ottawa.ca</a><br>
+	      	<a href='http://https://ottawa.ca/en/living-ottawa/water/water-utility-bills/moves-open-transfer-or-cancel-service' target="_blank">Ottawa Water & Sewer</a>
+	      </div>
+	      <div class="tab-pane fade" id="list-inspector" role="tabpanel" aria-labelledby="list-inspector-list">
+	      	<b><p>Mike White</p></b>
+	      	<p>HomePro Inspections</p>
+	      	<p>mjcwhite@gmail.com</p>
+	      	<a href='tel:613-860-4848'>613-860-4848</a><br>
+	      	<a href='http://www.homeprocanada.ca' target="_blank">www.homeprocanada.ca</a>
+	      	<hr>
+	      	<b><p>Mike Hayes</p></b>
+	      	<p>Bytown Home Inspection Service</p>
+	      	<p>mdhayes@bhis.ca</p>
+	      	<a href='tel:1-877-362-7434'>1-877-362-7434</a><br>
+	      	<a href='http://www.enbridgegas.com' target="_blank">www.enbridgegas.com</a>
+	      	<hr>
+	      	<b><p>Voyo Tomic</p></b>
+	      	<a href='tel:613-794-7394'>613-794-7394</a><br>
+	      </div>
+	      <div class="tab-pane fade" id="list-lawyer" role="tabpanel" aria-labelledby="list-lawyer-list">
+	      	<b><p>Cheryl Payette</p></b>
+	      	<p>Payette & Neal</p>
+	      	<p>cheryl@payetteneal.com</p>
+	      	<a href='tel:613-737-4140'>613-737-4140</a><br>
+	      	<a href='http://payetteneal.com/' target="_blank">www.conlinpayette.com</a>
+	      	<hr>
+	      	<b><p>John Goss</p></b>
+	      	<p>Goss, Mccorriston, Stel</p>
+	      	<p>johndgoss@gms-law.com</p>
+	      	<a href='tel:613-738-0023'>613-738-0023</a><br>
+	      	<a href='http://www.gms-law.com' target="_blank">www.gms-law.com</a>
+	      	<hr>
+	      	<b><p>Nancie Heaphy</p></b>
+	      	<p>Kelly Manthorp Heaphy</p>
+	      	<p>nah@kmhlawyers.ca</p>
+	      	<a href='tel:613-733-3000'>613-733-3000 x 121</a><br>
+	      	<a href='http://www.kmhlawyers.ca' target="_blank">www.kmhlawyers.ca</a>
+	      </div>
+	      <div class="tab-pane fade" id="list-mortgage" role="tabpanel" aria-labelledby="list-mortgage-list">
+	      	<b><p>David Birch</p></b>
+	      	<p>RBC Royal Bank</p>
+	      	<p>david.birch@rbc.com</p>
+	      	<a href='tel:613-240-6373'>613-240-6373</a><br>
+	      	<a href='http://www.mortgage.rbc.com/david.birch' target="_blank">www.mortgage.rbc.com/david.birch</a>
+	      	<hr>
+	      	<b><p>Kristin Stauffer</p></b>
+	      	<p>Dominion Lending Centres</p>
+	      	<p>kristin@krmortgages.com</p>
+	      	<a href='tel:613-759-2157'>613-759-2157</a><br>
+	      	<a href='http://www.kristinranieri.com' target="_blank">www.kristinranieri.com</a>
+	      	<hr>
+	      	<b><p>Gemma Riley Laurin</p></b>
+	      	<p>Dominion Lending Centres</p>
+	      	<p>nah@kmhlawyers.ca</p>
+	      	<a href='tel:613-845-0786'>613-845-0786</a><br>
+	      	<a href='http://www.thelaurinteam.com' target="_blank">www.thelaurinteam.com</a>
+	      	<hr>
+	      	<b><p>Elyse de Varennes</p></b>
+	      	<p>Dominion Lending Centres</p>
+	      	<p>edevarennes@dominionlending.ca</p>
+	      	<a href='tel:613-238-3521'>613-238-3521</a><br>
+	      	<a href='http://www.elysedevarennes.com' target="_blank">www.elysedevarennes.com</a>
+	      </div>
+	      <div class="tab-pane fade" id="list-moving" role="tabpanel" aria-labelledby="list-moving-list">
+	       	<b><p>Lisa Ann Robinson – Moving Broker</p></b>
+	      	<a href='tel:613-737-4140'>613-737-4140</a><br>
+	      	<hr>
+	      	<b><p>Two Men And a Truck</p></b>
+	      	<p>johndgoss@gms-law.com</p>
+	      	<a href='tel:613-738-0023'>613-738-0023</a><br>
+	      	<a href='http://www.twomenandatruck.ca/movers/on/ottawa' target="_blank">twomenandatruck.ca</a>
+	      	<hr>
+	      	<b><p>AMJ Campbell</p></b>
+	      	<p>info@amj-movers-ottawa.com</p>
+	      	<a href='tel:613-737-0000'>613-737-0000</a><br>
+	      	<a href='http://www.amj-movers-ottawa.com' target="_blank">www.amj-movers-ottawa.com</a>
+	      	<hr>
+	      	<b><p>Penske Truck Rentals</p></b>
+	      	<a href='tel:613-731-9998'>613-731-9998</a><br>
+	      	<a href='http://www.pensketruckrental.com' target="_blank">www.pensketruckrental.com</a>
+	      </div>
+	      <div class="tab-pane fade" id="list-improvement" role="tabpanel" aria-labelledby="list-improvement-list">
+	       	<b><p>Done Right Handyman Services</p></b>
+	       	<p>Wally McMillan</p>
+	      	<a href='tel:613-406-9997'>613-406-9997</a><br>
+	      	<p>wally@donerighthandymanservices.ca</p>
+	      	<a href='http://www.donerighthandymanservices.ca/' target="_blank">www.donerighthandymanservices.ca</a>
+	      	<hr>
+	      	<b><p>Sandra Lopez</p></b>
+	      	<p>House Cleaning</p>
+	      	<a href='tel:613-884-3852'>613-884-3852</a><br>
+	      	<hr>
+	      	<b><p>Personal Touch Home Cleaning</p></b>
+	      	<a href='tel:613-816-3669'>613-816-3669</a><br>
+	      	<p>janis@CleanHomesSell.ca</p>
+	      	<a href='http://www.personaltouchhomecleaning.com' target="_blank">www.personaltouchhomecleaning.com</a>
+	      	<hr>
+	      	<b><p>Mechanism Repair & Defogging</p></b>
+	      	<p>Ian Sherwan</p>
+	      	<a href='tel:613-680-3323'>613-680-3323</a><br>
+	      	<hr>
+	      	<b><p>National Furniture Rental</p></b>
+	      	<a href='tel:613-260-1099'>613-260-1099</a><br>
+	      	<p>dan@nationalrental.ca</p>
+	      	<a href='http://www.nationalrental.ca' target="_blank">www.nationalrental.ca</a>
+	      	<hr>
+	      	<b><p>Room Remedy Home Staging Co.</p></b>
+	      	<a href='tel:613-837-5068'>613-837-5068</a><br>
+	      	<p>info@roomremedy.ca</p>
+	      	<a href='http://www.checkermoversottawa.com' target="_blank">www.checkermoversottawa.com</a>
+	      	<hr>
+	      </div>
+	      <div class="tab-pane fade" id="list-roofing" role="tabpanel" aria-labelledby="list-roofing-list">
+	       	<b><p>Dave Tulloch Roofing</p></b>
+	      	<a href='tel:613-880-4079'>613-880-4079</a><br>
+	      	<a href='http://www.roomremedy.ca' target="_blank">www.roomremedy.ca</a>
+	      	<hr>
+	      	<b><p>Century Roofing & Siding</p></b>
+	      	<a href='tel:613-738-1774'>613-738-1774</a><br>
+	      	<a href='http://www.centuryroofingandsiding.ca' target="_blank">www.centuryroofingandsiding.ca</a>
+	      	<hr>
+	      </div>
+	      <div class="tab-pane fade" id="list-downsize" role="tabpanel" aria-labelledby="list-downsize-list">
+	       	<b><p>Junk that Funk</p></b>
+	      	<a href='tel:613-884-0456'>613-884-0456</a><br>
+	      	<a href='http://www.junkthatfunk.com' target="_blank">www.junkthatfunk.com</a>
+	      	<hr>
+	      	<b><p>Consignment World</p></b>
+	      	<p>1500 Bank Street</p>
+	      	<a href='tel:613-739-1500'>613-739-1500</a><br>
+	      	<hr>
+	      </div>
+	      <div class="tab-pane fade" id="list-painter" role="tabpanel" aria-labelledby="list-painter-list">
+	       	<b><p>Grade A Painting</p></b>
+	      	<p>Shayne James</p>
+	      	<a href='tel:613-316-0343'>613-316-0343</a><br>
+	      	<hr>
+	      	<b><p>Wow 1 Day Painting</p></b>
+	      	<p>customerservice@wow1day.com</p>
+	      	<a href='tel:613-738-0023'>613-738-0023</a><br>
+	      	<a href='http://www.wow1day.com' target="_blank">www.wow1day.com</a>
+	      	<hr>
+	      	<b><p>Herman Tores</p></b>
+	      	<a href='tel:613-327-2062'>613-327-2062</a><br>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="row">
+	  	<div class="col-12 my-5">
+	  		<hr>
+	   		<h3>Contact Us Today!</h3>
+	   		<form method='POST' action='.' enctype='multipart/form-data'> {% csrf_token %}
+				{{ form.as_p }}
+				<button class="btn btn-danger"> Submit </button>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}
